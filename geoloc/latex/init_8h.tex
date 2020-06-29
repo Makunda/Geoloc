@@ -1,0 +1,302 @@
+\hypertarget{init_8h}{}\section{init.\+h File Reference}
+\label{init_8h}\index{init.\+h@{init.\+h}}
+
+
+Fonctions relatives à l\textquotesingle{}initialisation des structures et elements necessaires à la visualisation.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+sf\+Vector2f \hyperlink{init_8h_aa5d386ddc64146fe965b7c93599d470e}{vector2f} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Initialise une structure spécifique à la S\+F\+ML contenant deux coordonnées Cette fonction cruciale existe dans la version C++ de la S\+F\+ML mais est absente de la version C. \end{DoxyCompactList}\item 
+sf\+Float\+Rect \hyperlink{init_8h_abd72693dabac7c83e408313b43d7e32d}{view\+\_\+get\+Rect} (float zoom\+Factor, sf\+View $\ast$view)
+\begin{DoxyCompactList}\small\item\em Renvoie le rectangle representant les limites de la vue courante Cette fonction existe dans la version C++ de la S\+F\+ML mais est absente de la version C. \end{DoxyCompactList}\item 
+int \hyperlink{init_8h_a5cf9355b881ab5960ef322f50fbfe638}{texture\+Loading} (sf\+Texture $\ast$text\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]})
+\begin{DoxyCompactList}\small\item\em Charge en mémoire toutes les textures de la carte. \end{DoxyCompactList}\item 
+int \hyperlink{init_8h_a3ef7cb30e9ab4b00cd5c56b967708882}{sprite\+Loading} (sf\+Sprite $\ast$sprite\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]}, sf\+Texture $\ast$text\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]})
+\begin{DoxyCompactList}\small\item\em Initialise tous les sprites correspondant à des parties de la carte. \end{DoxyCompactList}\item 
+sf\+Text $\ast$ \hyperlink{init_8h_a33c88793197a5d7760f49c19a48ec971}{init\+\_\+text} (char $\ast$string, sf\+Font $\ast$font, sf\+Color color, int taille)
+\begin{DoxyCompactList}\small\item\em Initialise un texte. \end{DoxyCompactList}\item 
+sf\+Sprite $\ast$ \hyperlink{init_8h_a28fb101543bc220768769dc31e24e83c}{init\+\_\+icon} (sf\+Texture $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Initialise une icone de l\textquotesingle{}interface, associe le sprite crée avec la texture en paramètre. \end{DoxyCompactList}\item 
+sf\+Circle\+Shape $\ast$$\ast$ \hyperlink{init_8h_aa3cdf6c205ebf5cd408602f2a9a2f568}{init\+\_\+tab} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Initialise un tableau de sprite en forme de cercle pour afficher les points , la taille est récupéré dans la liste de points. \end{DoxyCompactList}\item 
+void \hyperlink{init_8h_aaf19774c6b2fad3ef2577304bf73ac9a}{init\+\_\+point} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l, sf\+Circle\+Shape $\ast$$\ast$tab, sf\+Vertex\+Array $\ast$vertex\+Array)
+\begin{DoxyCompactList}\small\item\em Associe les coordonnées des points de la liste avec le centre des cercles. \end{DoxyCompactList}\item 
+sf\+Circle\+Shape $\ast$$\ast$$\ast$ \hyperlink{init_8h_a32106fab0bf2c69656d2e31b76d37a10}{init\+\_\+tab\+\_\+cluster} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Initialise un tableau de sprite en forme de cercle pour afficher les clusters, la taille est récupéré dans les liste de points. \end{DoxyCompactList}\item 
+void \hyperlink{init_8h_ae605d7bfcb7f6e2d222987614f02984f}{init\+\_\+cluster\+\_\+graph} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$l, sf\+Circle\+Shape $\ast$$\ast$$\ast$tab)
+\begin{DoxyCompactList}\small\item\em Associe les coordonnées des points des listes avec le centre des cercles. \end{DoxyCompactList}\item 
+void \hyperlink{init_8h_a1ad7056f78836f0c1482be5d66eef6a8}{init\+\_\+cluster\+\_\+temp} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l, sf\+Circle\+Shape $\ast$$\ast$tab)
+\begin{DoxyCompactList}\small\item\em Initialise les cluster temporels (issus de la fusion, fonction implémenté mais non-\/utilisé) \end{DoxyCompactList}\item 
+sf\+Vertex $\ast$ \hyperlink{init_8h_a61ce67886fdbcf50ce310b83c2e2d4c4}{init\+\_\+vertex} (int taille)
+\begin{DoxyCompactList}\small\item\em Initialise un tableau de vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions relatives à l\textquotesingle{}initialisation des structures et elements necessaires à la visualisation. 
+
+\begin{DoxyAuthor}{Author}
+Vincent Mozziconacci  5.\+0 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{init.\+h@{init.\+h}!init\+\_\+cluster\+\_\+graph@{init\+\_\+cluster\+\_\+graph}}
+\index{init\+\_\+cluster\+\_\+graph@{init\+\_\+cluster\+\_\+graph}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+cluster\+\_\+graph(tete\+\_\+liste\+\_\+logs $\ast$l, sf\+Circle\+Shape $\ast$$\ast$$\ast$tab)}{init_cluster_graph(tete_liste_logs *l, sfCircleShape ***tab)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+cluster\+\_\+graph (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{l, }
+\item[{sf\+Circle\+Shape $\ast$$\ast$$\ast$}]{tab}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_ae605d7bfcb7f6e2d222987614f02984f}{}\label{init_8h_ae605d7bfcb7f6e2d222987614f02984f}
+
+
+Associe les coordonnées des points des listes avec le centre des cercles. 
+
+(\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$l, sf\+Circle\+Shape$\ast$$\ast$$\ast$ tab ) 
+\begin{DoxyParams}{Parameters}
+{\em l} & Liste de listes de points \\
+\hline
+{\em tab} & Tableau à deux dimensions de sprites en forme de cercle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!init\+\_\+cluster\+\_\+temp@{init\+\_\+cluster\+\_\+temp}}
+\index{init\+\_\+cluster\+\_\+temp@{init\+\_\+cluster\+\_\+temp}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+cluster\+\_\+temp(tete\+\_\+liste\+\_\+point $\ast$l, sf\+Circle\+Shape $\ast$$\ast$tab)}{init_cluster_temp(tete_liste_point *l, sfCircleShape **tab)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+cluster\+\_\+temp (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{l, }
+\item[{sf\+Circle\+Shape $\ast$$\ast$}]{tab}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_a1ad7056f78836f0c1482be5d66eef6a8}{}\label{init_8h_a1ad7056f78836f0c1482be5d66eef6a8}
+
+
+Initialise les cluster temporels (issus de la fusion, fonction implémenté mais non-\/utilisé) 
+
+(\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l, sf\+Circle\+Shape$\ast$$\ast$ tab ) 
+\begin{DoxyParams}{Parameters}
+{\em l} & Tete d\textquotesingle{}une liste de point \\
+\hline
+{\em tab} & Tableau de sprites en forme de cercle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!init\+\_\+icon@{init\+\_\+icon}}
+\index{init\+\_\+icon@{init\+\_\+icon}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+icon(sf\+Texture $\ast$texture)}{init_icon(sfTexture *texture)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+Sprite$\ast$ init\+\_\+icon (
+\begin{DoxyParamCaption}
+\item[{sf\+Texture $\ast$}]{texture}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_a28fb101543bc220768769dc31e24e83c}{}\label{init_8h_a28fb101543bc220768769dc31e24e83c}
+
+
+Initialise une icone de l\textquotesingle{}interface, associe le sprite crée avec la texture en paramètre. 
+
+(sf\+Texture $\ast$texture) 
+\begin{DoxyParams}{Parameters}
+{\em texture} & Texture a associer au sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+Sprite$\ast$ Sprite initialisé avec une texture 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!init\+\_\+point@{init\+\_\+point}}
+\index{init\+\_\+point@{init\+\_\+point}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+point(tete\+\_\+liste\+\_\+point $\ast$l, sf\+Circle\+Shape $\ast$$\ast$tab, sf\+Vertex\+Array $\ast$vertex\+Array)}{init_point(tete_liste_point *l, sfCircleShape **tab, sfVertexArray *vertexArray)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+point (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{l, }
+\item[{sf\+Circle\+Shape $\ast$$\ast$}]{tab, }
+\item[{sf\+Vertex\+Array $\ast$}]{vertex\+Array}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_aaf19774c6b2fad3ef2577304bf73ac9a}{}\label{init_8h_aaf19774c6b2fad3ef2577304bf73ac9a}
+
+
+Associe les coordonnées des points de la liste avec le centre des cercles. 
+
+(\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} {\itshape l, sf\+Circle\+Shape$\ast$$\ast$ tab, sf\+Vertex\+Array} vertex\+Array) 
+\begin{DoxyParams}{Parameters}
+{\em l} & Liste de points \\
+\hline
+{\em tab} & Tableau de sprites en forme de cercle \\
+\hline
+{\em vertex\+Array} & Tableau de vertex (permet de tracer les routes, un vertex = un sommet) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!init\+\_\+tab@{init\+\_\+tab}}
+\index{init\+\_\+tab@{init\+\_\+tab}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+tab(tete\+\_\+liste\+\_\+point $\ast$l)}{init_tab(tete_liste_point *l)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+Circle\+Shape$\ast$$\ast$ init\+\_\+tab (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_aa3cdf6c205ebf5cd408602f2a9a2f568}{}\label{init_8h_aa3cdf6c205ebf5cd408602f2a9a2f568}
+
+
+Initialise un tableau de sprite en forme de cercle pour afficher les points , la taille est récupéré dans la liste de points. 
+
+(\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l) 
+\begin{DoxyParams}{Parameters}
+{\em l} & Liste de points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+Circle\+Shape$\ast$$\ast$ Tableau de sprite en forme de cercle 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!init\+\_\+tab\+\_\+cluster@{init\+\_\+tab\+\_\+cluster}}
+\index{init\+\_\+tab\+\_\+cluster@{init\+\_\+tab\+\_\+cluster}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+tab\+\_\+cluster(tete\+\_\+liste\+\_\+logs $\ast$l)}{init_tab_cluster(tete_liste_logs *l)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+Circle\+Shape$\ast$$\ast$$\ast$ init\+\_\+tab\+\_\+cluster (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_a32106fab0bf2c69656d2e31b76d37a10}{}\label{init_8h_a32106fab0bf2c69656d2e31b76d37a10}
+
+
+Initialise un tableau de sprite en forme de cercle pour afficher les clusters, la taille est récupéré dans les liste de points. 
+
+(\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l) 
+\begin{DoxyParams}{Parameters}
+{\em l} & Liste de listes de points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+Circle\+Shape$\ast$$\ast$$\ast$ Tableau a deux dimensions de sprite en forme de cercle 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!init\+\_\+text@{init\+\_\+text}}
+\index{init\+\_\+text@{init\+\_\+text}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+text(char $\ast$string, sf\+Font $\ast$font, sf\+Color color, int taille)}{init_text(char *string, sfFont *font, sfColor color, int taille)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+Text$\ast$ init\+\_\+text (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{sf\+Font $\ast$}]{font, }
+\item[{sf\+Color}]{color, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_a33c88793197a5d7760f49c19a48ec971}{}\label{init_8h_a33c88793197a5d7760f49c19a48ec971}
+
+
+Initialise un texte. 
+
+(char$\ast$ string, sf\+Font $\ast$font, sf\+Color color, int taille) 
+\begin{DoxyParams}{Parameters}
+{\em string} & Chaine de caracteres a afficher \\
+\hline
+{\em font} & Police d\textquotesingle{}ecriture a utiliser \\
+\hline
+{\em color} & Couleur a associer au texte \\
+\hline
+{\em taille} & Taille du texte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+Text$\ast$ Texte initialisé 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!init\+\_\+vertex@{init\+\_\+vertex}}
+\index{init\+\_\+vertex@{init\+\_\+vertex}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+vertex(int taille)}{init_vertex(int taille)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+Vertex$\ast$ init\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_a61ce67886fdbcf50ce310b83c2e2d4c4}{}\label{init_8h_a61ce67886fdbcf50ce310b83c2e2d4c4}
+
+
+Initialise un tableau de vertex. 
+
+(int taille) 
+\begin{DoxyParams}{Parameters}
+{\em taille} & Taille du tableau de vertex à initialiser \\
+\hline
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{init.\+h@{init.\+h}!sprite\+Loading@{sprite\+Loading}}
+\index{sprite\+Loading@{sprite\+Loading}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{sprite\+Loading(sf\+Sprite $\ast$sprite\+Tab[4][5], sf\+Texture $\ast$text\+Tab[4][5])}{spriteLoading(sfSprite *spriteTab[4][5], sfTexture *textTab[4][5])}}]{\setlength{\rightskip}{0pt plus 5cm}int sprite\+Loading (
+\begin{DoxyParamCaption}
+\item[{sf\+Sprite $\ast$}]{sprite\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]}, }
+\item[{sf\+Texture $\ast$}]{text\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_a3ef7cb30e9ab4b00cd5c56b967708882}{}\label{init_8h_a3ef7cb30e9ab4b00cd5c56b967708882}
+
+
+Initialise tous les sprites correspondant à des parties de la carte. 
+
+(sf\+Sprite $\ast$sprite\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]}, sf\+Texture $\ast$text\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]}) 
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Tab} & Tableau de sprites à initialiser \\
+\hline
+{\em text\+Tab} & Tableau de textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 lorsque l\textquotesingle{}initialisation des sprites s\textquotesingle{}est executé correctement, 0 sinon 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!texture\+Loading@{texture\+Loading}}
+\index{texture\+Loading@{texture\+Loading}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{texture\+Loading(sf\+Texture $\ast$text\+Tab[4][5])}{textureLoading(sfTexture *textTab[4][5])}}]{\setlength{\rightskip}{0pt plus 5cm}int texture\+Loading (
+\begin{DoxyParamCaption}
+\item[{sf\+Texture $\ast$}]{text\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_a5cf9355b881ab5960ef322f50fbfe638}{}\label{init_8h_a5cf9355b881ab5960ef322f50fbfe638}
+
+
+Charge en mémoire toutes les textures de la carte. 
+
+(sf\+Texture $\ast$text\+Tab\mbox{[}4\mbox{]}\mbox{[}5\mbox{]}) 
+\begin{DoxyParams}{Parameters}
+{\em text\+Tab} & Tableau de textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 lorsque le chargement s\textquotesingle{}est executé correctement, 0 sinon 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!vector2f@{vector2f}}
+\index{vector2f@{vector2f}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{vector2f(float x, float y)}{vector2f(float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+Vector2f vector2f (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_aa5d386ddc64146fe965b7c93599d470e}{}\label{init_8h_aa5d386ddc64146fe965b7c93599d470e}
+
+
+Initialise une structure spécifique à la S\+F\+ML contenant deux coordonnées Cette fonction cruciale existe dans la version C++ de la S\+F\+ML mais est absente de la version C. 
+
+(float x, float y) 
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: Coordonnée x \\
+\hline
+{\em y} & \+: Coordonnée y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+Vector2f structure de coordonnée spécifique à la S\+F\+ML 
+\end{DoxyReturn}
+\index{init.\+h@{init.\+h}!view\+\_\+get\+Rect@{view\+\_\+get\+Rect}}
+\index{view\+\_\+get\+Rect@{view\+\_\+get\+Rect}!init.\+h@{init.\+h}}
+\subsubsection[{\texorpdfstring{view\+\_\+get\+Rect(float zoom\+Factor, sf\+View $\ast$view)}{view_getRect(float zoomFactor, sfView *view)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+Float\+Rect view\+\_\+get\+Rect (
+\begin{DoxyParamCaption}
+\item[{float}]{zoom\+Factor, }
+\item[{sf\+View $\ast$}]{view}
+\end{DoxyParamCaption}
+)}\hypertarget{init_8h_abd72693dabac7c83e408313b43d7e32d}{}\label{init_8h_abd72693dabac7c83e408313b43d7e32d}
+
+
+Renvoie le rectangle representant les limites de la vue courante Cette fonction existe dans la version C++ de la S\+F\+ML mais est absente de la version C. 
+
+(float zoom\+Factor, sf\+View $\ast$view) 
+\begin{DoxyParams}{Parameters}
+{\em zoom\+Factor} & \+: niveau de zoom \\
+\hline
+{\em view} & \+: vue courante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+Float\+Rect structure representant un rectangle, specifique à la S\+F\+ML 
+\end{DoxyReturn}

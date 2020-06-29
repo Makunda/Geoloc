@@ -1,0 +1,80 @@
+\hypertarget{structpoint}{}\section{point Struct Reference}
+\label{structpoint}\index{point@{point}}
+
+
+Structure d\textquotesingle{}un point.  
+
+
+
+
+{\ttfamily \#include $<$structure.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$ \hyperlink{structpoint_a21c2b8019e425747d93ec960370f2a7d}{nom\+\_\+fichier}
+\item 
+int $\ast$$\ast$ \hyperlink{structpoint_aa465348d4b7fd3bf310fb82f6a6c96a4}{tab\+\_\+heure}
+\item 
+int \hyperlink{structpoint_a5923982f66809b9bdde4d14fc7939259}{id}
+\item 
+struct \hyperlink{structpoint__ign}{point\+\_\+ign} $\ast$ \hyperlink{structpoint_a38ba11fa6fdfa5b2439cd4d749475ed5}{ign}
+\item 
+\hyperlink{structcoordonnee}{coordonnee} {\bfseries pos}\hypertarget{structpoint_a87553510f540b88abed4e375509eddba}{}\label{structpoint_a87553510f540b88abed4e375509eddba}
+
+\item 
+int \hyperlink{structpoint_aa991070906e963e4f6b5ab31ee2f0591}{id\+\_\+cluster}
+\item 
+\hyperlink{structpixel}{pixel} \hyperlink{structpoint_acfb8f51bd1a3727c3b245762f3cf2339}{pix}
+\item 
+int \hyperlink{structpoint_a2ed4c7d2e9c88fedc960b879e38e55e9}{effectif}
+\item 
+double \hyperlink{structpoint_abd490da87dbabe3e70df4bb7a375d54f}{rayon}
+\item 
+double \hyperlink{structpoint_a32d36d9ecda06f7884b9a3d6b87abe9b}{epsilon}
+\item 
+\hyperlink{structcouleur}{couleur} \hyperlink{structpoint_a8568074a4a7300cccfb9f2ced1d4ed1a}{color}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure d\textquotesingle{}un point. 
+
+Structure contenant toutes les informations d\textquotesingle{}un point tire d\textquotesingle{}un log ou devant etre cree. Il peut prendre la forme d\textquotesingle{}un point mais aussi d\textquotesingle{}un cluster. 
+
+\subsection{Field Documentation}
+\index{point@{point}!color@{color}}
+\index{color@{color}!point@{point}}
+\subsubsection[{\texorpdfstring{color}{color}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf couleur} point\+::color}\hypertarget{structpoint_a8568074a4a7300cccfb9f2ced1d4ed1a}{}\label{structpoint_a8568074a4a7300cccfb9f2ced1d4ed1a}
+Couleur du point. \index{point@{point}!effectif@{effectif}}
+\index{effectif@{effectif}!point@{point}}
+\subsubsection[{\texorpdfstring{effectif}{effectif}}]{\setlength{\rightskip}{0pt plus 5cm}int point\+::effectif}\hypertarget{structpoint_a2ed4c7d2e9c88fedc960b879e38e55e9}{}\label{structpoint_a2ed4c7d2e9c88fedc960b879e38e55e9}
+Effectif du point ou du cluster. \index{point@{point}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!point@{point}}
+\subsubsection[{\texorpdfstring{epsilon}{epsilon}}]{\setlength{\rightskip}{0pt plus 5cm}double point\+::epsilon}\hypertarget{structpoint_a32d36d9ecda06f7884b9a3d6b87abe9b}{}\label{structpoint_a32d36d9ecda06f7884b9a3d6b87abe9b}
+Valeur epsilon du D\+B\+S\+C\+AN utilise. \index{point@{point}!id@{id}}
+\index{id@{id}!point@{point}}
+\subsubsection[{\texorpdfstring{id}{id}}]{\setlength{\rightskip}{0pt plus 5cm}int point\+::id}\hypertarget{structpoint_a5923982f66809b9bdde4d14fc7939259}{}\label{structpoint_a5923982f66809b9bdde4d14fc7939259}
+Timestamp du point. \index{point@{point}!id\+\_\+cluster@{id\+\_\+cluster}}
+\index{id\+\_\+cluster@{id\+\_\+cluster}!point@{point}}
+\subsubsection[{\texorpdfstring{id\+\_\+cluster}{id_cluster}}]{\setlength{\rightskip}{0pt plus 5cm}int point\+::id\+\_\+cluster}\hypertarget{structpoint_aa991070906e963e4f6b5ab31ee2f0591}{}\label{structpoint_aa991070906e963e4f6b5ab31ee2f0591}
+Id du cluster parent (-\/2 si Bruit, -\/1 à l\textquotesingle{}initialisation) \index{point@{point}!ign@{ign}}
+\index{ign@{ign}!point@{point}}
+\subsubsection[{\texorpdfstring{ign}{ign}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf point\+\_\+ign}$\ast$ point\+::ign}\hypertarget{structpoint_a38ba11fa6fdfa5b2439cd4d749475ed5}{}\label{structpoint_a38ba11fa6fdfa5b2439cd4d749475ed5}
+Point I\+GN associe. \index{point@{point}!nom\+\_\+fichier@{nom\+\_\+fichier}}
+\index{nom\+\_\+fichier@{nom\+\_\+fichier}!point@{point}}
+\subsubsection[{\texorpdfstring{nom\+\_\+fichier}{nom_fichier}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf element\+\_\+liste\+\_\+logs}$\ast$ point\+::nom\+\_\+fichier}\hypertarget{structpoint_a21c2b8019e425747d93ec960370f2a7d}{}\label{structpoint_a21c2b8019e425747d93ec960370f2a7d}
+Log parent du point. \index{point@{point}!pix@{pix}}
+\index{pix@{pix}!point@{point}}
+\subsubsection[{\texorpdfstring{pix}{pix}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pixel} point\+::pix}\hypertarget{structpoint_acfb8f51bd1a3727c3b245762f3cf2339}{}\label{structpoint_acfb8f51bd1a3727c3b245762f3cf2339}
+coordonnees en pixel. \index{point@{point}!rayon@{rayon}}
+\index{rayon@{rayon}!point@{point}}
+\subsubsection[{\texorpdfstring{rayon}{rayon}}]{\setlength{\rightskip}{0pt plus 5cm}double point\+::rayon}\hypertarget{structpoint_abd490da87dbabe3e70df4bb7a375d54f}{}\label{structpoint_abd490da87dbabe3e70df4bb7a375d54f}
+Rayon du point. \index{point@{point}!tab\+\_\+heure@{tab\+\_\+heure}}
+\index{tab\+\_\+heure@{tab\+\_\+heure}!point@{point}}
+\subsubsection[{\texorpdfstring{tab\+\_\+heure}{tab_heure}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ point\+::tab\+\_\+heure}\hypertarget{structpoint_aa465348d4b7fd3bf310fb82f6a6c96a4}{}\label{structpoint_aa465348d4b7fd3bf310fb82f6a6c96a4}
+frequentation des clusters en fonction de l\textquotesingle{}heure. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structure_8h}{structure.\+h}\end{DoxyCompactItemize}

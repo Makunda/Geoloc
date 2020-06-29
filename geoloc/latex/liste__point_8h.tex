@@ -1,0 +1,328 @@
+\hypertarget{liste__point_8h}{}\section{liste\+\_\+point.\+h File Reference}
+\label{liste__point_8h}\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+
+
+Fonctions relatives au listes doublement chainees de points. Toutes les fonctions necessitant une interface directe entre le programme et les différents fichiers. Utile pour la lecture et l\textquotesingle{}ecriture de logs anonymisés.  
+
+
+{\ttfamily \#include \char`\"{}structure.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$ \hyperlink{liste__point_8h_a2eb9fa883e97b0861dbf35c7e16a6d55}{init\+\_\+liste} ()
+\begin{DoxyCompactList}\small\item\em Initialise une liste de point . \end{DoxyCompactList}\item 
+int \hyperlink{liste__point_8h_a6fb23b29293b9766d44a73b9d73cae20}{liste\+\_\+vide} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Verifie si une liste est vide ou non . \end{DoxyCompactList}\item 
+\hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$ \hyperlink{liste__point_8h_ae6e44c9f767a0b7654b9bb7db5759215}{retourner\+\_\+element\+\_\+id} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, int a)
+\begin{DoxyCompactList}\small\item\em Retourne un element en fonction de sa place. \end{DoxyCompactList}\item 
+int \hyperlink{liste__point_8h_a3da40a39aea26d212896e90f9c6dbce5}{existe\+\_\+liste} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structpoint}{point} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Cherche si un element existe dans la liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste__point_8h_aca9823599e43b10a6a9936cfe9ff45ab}{liste\+\_\+union} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt1, \hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt2)
+\begin{DoxyCompactList}\small\item\em Realise l\textquotesingle{}union de deux listes. \end{DoxyCompactList}\item 
+int \hyperlink{liste__point_8h_ae176d352a56561509b70fd6f2650faf1}{point\+\_\+egaux} (\hyperlink{structpoint}{point} $\ast$a, \hyperlink{structpoint}{point} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Verifie si deux points sont egaux. \end{DoxyCompactList}\item 
+void \hyperlink{liste__point_8h_a063f3dfa91d50b0a3a1c552eb855fc8c}{ajout\+\_\+liste\+\_\+fin} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structpoint}{point} $\ast$pnt)
+\begin{DoxyCompactList}\small\item\em Ajoute un element a la fin d\textquotesingle{}une liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste__point_8h_af1917e3171d585796ac289c61d15147f}{ajout\+\_\+liste} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structpoint}{point} $\ast$pnt)
+\begin{DoxyCompactList}\small\item\em Ajoute un element au debut d\textquotesingle{}une liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste__point_8h_a4ecf13250f7fec79d261b92c0fec216c}{ajout\+\_\+liste\+\_\+tri} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structpoint}{point} $\ast$pnt)
+\begin{DoxyCompactList}\small\item\em Ajout "trie\textquotesingle{} dans une liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste__point_8h_a08c283f97db542aa5f64dfbb21008944}{supprimer\+\_\+element} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Supprimer un element au debut d\textquotesingle{}une liste. \end{DoxyCompactList}\item 
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$ \hyperlink{liste__point_8h_aafec9cfaca7f29baafa5bb0bae69d801}{supprimer\+\_\+element\+\_\+liste} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Supprimer un element dans une liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste__point_8h_af01af80634c8a53964068aaabe397d6a}{afficher\+\_\+liste\+\_\+console} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Affiche les adresses des elements de la liste dans la console. Pratique pour la phase de Debuggage. \end{DoxyCompactList}\item 
+void {\bfseries detecter\+\_\+erreur} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)\hypertarget{liste__point_8h_a59b0f33ab561535b16fbc527355517c2}{}\label{liste__point_8h_a59b0f33ab561535b16fbc527355517c2}
+
+\item 
+void \hyperlink{liste__point_8h_ab029c866c8b37fceed598a66409a70d8}{afficher\+\_\+liste} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, F\+I\+LE $\ast$f1)
+\begin{DoxyCompactList}\small\item\em Affiche les adresses des elements de la liste dans un fichier. Pratique pour la phase de Debuggage. \end{DoxyCompactList}\item 
+void \hyperlink{liste__point_8h_af6870b3a16500b6401738300869e1965}{vider\+\_\+liste} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Supprime une liste de point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions relatives au listes doublement chainees de points. Toutes les fonctions necessitant une interface directe entre le programme et les différents fichiers. Utile pour la lecture et l\textquotesingle{}ecriture de logs anonymisés. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Joby  4.\+7 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!afficher\+\_\+liste@{afficher\+\_\+liste}}
+\index{afficher\+\_\+liste@{afficher\+\_\+liste}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{afficher\+\_\+liste(tete\+\_\+liste\+\_\+point $\ast$pt, F\+I\+L\+E $\ast$f1)}{afficher_liste(tete_liste_point *pt, FILE *f1)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{F\+I\+LE $\ast$}]{f1}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_ab029c866c8b37fceed598a66409a70d8}{}\label{liste__point_8h_ab029c866c8b37fceed598a66409a70d8}
+
+
+Affiche les adresses des elements de la liste dans un fichier. Pratique pour la phase de Debuggage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point, f1 fichier dans lequel afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!afficher\+\_\+liste\+\_\+console@{afficher\+\_\+liste\+\_\+console}}
+\index{afficher\+\_\+liste\+\_\+console@{afficher\+\_\+liste\+\_\+console}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{afficher\+\_\+liste\+\_\+console(tete\+\_\+liste\+\_\+point $\ast$pt)}{afficher_liste_console(tete_liste_point *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\+\_\+liste\+\_\+console (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_af01af80634c8a53964068aaabe397d6a}{}\label{liste__point_8h_af01af80634c8a53964068aaabe397d6a}
+
+
+Affiche les adresses des elements de la liste dans la console. Pratique pour la phase de Debuggage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!ajout\+\_\+liste@{ajout\+\_\+liste}}
+\index{ajout\+\_\+liste@{ajout\+\_\+liste}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+\_\+liste(tete\+\_\+liste\+\_\+point $\ast$pt, point $\ast$pnt)}{ajout_liste(tete_liste_point *pt, point *pnt)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf point} $\ast$}]{pnt}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_af1917e3171d585796ac289c61d15147f}{}\label{liste__point_8h_af1917e3171d585796ac289c61d15147f}
+
+
+Ajoute un element au debut d\textquotesingle{}une liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point, pnt Point a inserer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!ajout\+\_\+liste\+\_\+fin@{ajout\+\_\+liste\+\_\+fin}}
+\index{ajout\+\_\+liste\+\_\+fin@{ajout\+\_\+liste\+\_\+fin}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+\_\+liste\+\_\+fin(tete\+\_\+liste\+\_\+point $\ast$pt, point $\ast$pnt)}{ajout_liste_fin(tete_liste_point *pt, point *pnt)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+\_\+liste\+\_\+fin (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf point} $\ast$}]{pnt}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_a063f3dfa91d50b0a3a1c552eb855fc8c}{}\label{liste__point_8h_a063f3dfa91d50b0a3a1c552eb855fc8c}
+
+
+Ajoute un element a la fin d\textquotesingle{}une liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point, pnt Point a inserer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!ajout\+\_\+liste\+\_\+tri@{ajout\+\_\+liste\+\_\+tri}}
+\index{ajout\+\_\+liste\+\_\+tri@{ajout\+\_\+liste\+\_\+tri}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+\_\+liste\+\_\+tri(tete\+\_\+liste\+\_\+point $\ast$pt, point $\ast$pnt)}{ajout_liste_tri(tete_liste_point *pt, point *pnt)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+\_\+liste\+\_\+tri (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf point} $\ast$}]{pnt}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_a4ecf13250f7fec79d261b92c0fec216c}{}\label{liste__point_8h_a4ecf13250f7fec79d261b92c0fec216c}
+
+
+Ajout "trie\textquotesingle{} dans une liste. 
+
+On trie les listes suivant l\textquotesingle{}id des points ( le Timestamp ), en inserant chaque element à la bonne place. Gain de temps et de moyen par rapport aux autres methodes de tri. 
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point, pnt Point a inserer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!existe\+\_\+liste@{existe\+\_\+liste}}
+\index{existe\+\_\+liste@{existe\+\_\+liste}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{existe\+\_\+liste(tete\+\_\+liste\+\_\+point $\ast$pt, point $\ast$p)}{existe_liste(tete_liste_point *pt, point *p)}}]{\setlength{\rightskip}{0pt plus 5cm}int existe\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf point} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_a3da40a39aea26d212896e90f9c6dbce5}{}\label{liste__point_8h_a3da40a39aea26d212896e90f9c6dbce5}
+
+
+Cherche si un element existe dans la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Pointeur sur une liste de point, p point a verifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si trouvé, 0 sinon. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!init\+\_\+liste@{init\+\_\+liste}}
+\index{init\+\_\+liste@{init\+\_\+liste}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+liste()}{init_liste()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+point}$\ast$ init\+\_\+liste (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_a2eb9fa883e97b0861dbf35c7e16a6d55}{}\label{liste__point_8h_a2eb9fa883e97b0861dbf35c7e16a6d55}
+
+
+Initialise une liste de point . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} une liste initialisée. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!liste\+\_\+union@{liste\+\_\+union}}
+\index{liste\+\_\+union@{liste\+\_\+union}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{liste\+\_\+union(tete\+\_\+liste\+\_\+point $\ast$pt1, tete\+\_\+liste\+\_\+point $\ast$pt2)}{liste_union(tete_liste_point *pt1, tete_liste_point *pt2)}}]{\setlength{\rightskip}{0pt plus 5cm}void liste\+\_\+union (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt1, }
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt2}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_aca9823599e43b10a6a9936cfe9ff45ab}{}\label{liste__point_8h_aca9823599e43b10a6a9936cfe9ff45ab}
+
+
+Realise l\textquotesingle{}union de deux listes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt1} & et pt2 listes contenant des points. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!liste\+\_\+vide@{liste\+\_\+vide}}
+\index{liste\+\_\+vide@{liste\+\_\+vide}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{liste\+\_\+vide(tete\+\_\+liste\+\_\+point $\ast$pt)}{liste_vide(tete_liste_point *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}int liste\+\_\+vide (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_a6fb23b29293b9766d44a73b9d73cae20}{}\label{liste__point_8h_a6fb23b29293b9766d44a73b9d73cae20}
+
+
+Verifie si une liste est vide ou non . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Pointeur sur une liste de point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si liste vide , 0 sinon. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!point\+\_\+egaux@{point\+\_\+egaux}}
+\index{point\+\_\+egaux@{point\+\_\+egaux}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{point\+\_\+egaux(point $\ast$a, point $\ast$b)}{point_egaux(point *a, point *b)}}]{\setlength{\rightskip}{0pt plus 5cm}int point\+\_\+egaux (
+\begin{DoxyParamCaption}
+\item[{{\bf point} $\ast$}]{a, }
+\item[{{\bf point} $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_ae176d352a56561509b70fd6f2650faf1}{}\label{liste__point_8h_ae176d352a56561509b70fd6f2650faf1}
+
+
+Verifie si deux points sont egaux. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & et b les points a tester. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si egaux, 0 sinon. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!retourner\+\_\+element\+\_\+id@{retourner\+\_\+element\+\_\+id}}
+\index{retourner\+\_\+element\+\_\+id@{retourner\+\_\+element\+\_\+id}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{retourner\+\_\+element\+\_\+id(tete\+\_\+liste\+\_\+point $\ast$pt, int a)}{retourner_element_id(tete_liste_point *pt, int a)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element\+\_\+liste\+\_\+point}$\ast$ retourner\+\_\+element\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_ae6e44c9f767a0b7654b9bb7db5759215}{}\label{liste__point_8h_ae6e44c9f767a0b7654b9bb7db5759215}
+
+
+Retourne un element en fonction de sa place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Pointeur sur une liste de point, a position de l\textquotesingle{}element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+element si position valable. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!supprimer\+\_\+element@{supprimer\+\_\+element}}
+\index{supprimer\+\_\+element@{supprimer\+\_\+element}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+element(tete\+\_\+liste\+\_\+point $\ast$pt)}{supprimer_element(tete_liste_point *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_a08c283f97db542aa5f64dfbb21008944}{}\label{liste__point_8h_a08c283f97db542aa5f64dfbb21008944}
+
+
+Supprimer un element au debut d\textquotesingle{}une liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!supprimer\+\_\+element\+\_\+liste@{supprimer\+\_\+element\+\_\+liste}}
+\index{supprimer\+\_\+element\+\_\+liste@{supprimer\+\_\+element\+\_\+liste}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+element\+\_\+liste(tete\+\_\+liste\+\_\+point $\ast$pt, element\+\_\+liste\+\_\+point $\ast$p)}{supprimer_element_liste(tete_liste_point *pt, element_liste_point *p)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+point}$\ast$ supprimer\+\_\+element\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf element\+\_\+liste\+\_\+point} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_aafec9cfaca7f29baafa5bb0bae69d801}{}\label{liste__point_8h_aafec9cfaca7f29baafa5bb0bae69d801}
+
+
+Supprimer un element dans une liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point, pnt Point a supprimer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tete\+\_\+liste\+\_\+point$\ast$ Nouvelle liste de point. 
+\end{DoxyReturn}
+\index{liste\+\_\+point.\+h@{liste\+\_\+point.\+h}!vider\+\_\+liste@{vider\+\_\+liste}}
+\index{vider\+\_\+liste@{vider\+\_\+liste}!liste\+\_\+point.\+h@{liste\+\_\+point.\+h}}
+\subsubsection[{\texorpdfstring{vider\+\_\+liste(tete\+\_\+liste\+\_\+point $\ast$pt)}{vider_liste(tete_liste_point *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}void vider\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{liste__point_8h_af6870b3a16500b6401738300869e1965}{}\label{liste__point_8h_af6870b3a16500b6401738300869e1965}
+
+
+Supprime une liste de point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste de point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}

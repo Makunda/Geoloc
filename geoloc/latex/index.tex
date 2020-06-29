@@ -1,0 +1,32 @@
+\hypertarget{index_intro_sec}{}\section{Geoloc S\+T\+I 3\+A 2017}\label{index_intro_sec}
+Bienvenue sur la documentation du projet Geoloc ! Projet realise par Amine Allouche, Hugo Joby, Farouk Mounim et Vincent Mozziconacci dans le cadre de la 1ere annee de Securite et Technologies Informatique. \hypertarget{index_install_sec}{}\section{Installation et Pre-\/requis}\label{index_install_sec}
+Installer les paquets nécessaires à la C\+S\+F\+ML (paquet S\+F\+ML puis paquet C\+S\+F\+ML) en utilisant un gestionnaire de paquet linux, commandes \+: sudo apt install libsfml-\/dev libcsfml-\/dev A\+T\+T\+E\+N\+T\+I\+ON \+: Le projet geoloc necessite la version 2.\+3 du paquet libcsfml-\/dev\hypertarget{index_install_sec}{}\section{Installation et Pre-\/requis}\label{index_install_sec}
+\hypertarget{index_step1}{}\subsection{Etape 1\+: Importer les logs}\label{index_step1}
+Pour Importer ses propres logs, c\textquotesingle{}est simple, il suffit des les exporter depuis l\textquotesingle{}application Geoloc disponible sur Smartphone, et de les placer dans le dossier \char`\"{}\+Logs\char`\"{} situe dans geoloc/logs.\hypertarget{index_step2}{}\subsection{Etape 2\+: Lancer Geoloc}\label{index_step2}
+Pour lancer geoloc il suffit de lancer l\textquotesingle{}executable de geoloc. Une fenetre avec un menu s\textquotesingle{}ouvre ainsi et vous proposent differents choix. Vous pouvez \+:
+\begin{DoxyItemize}
+\item Lancer la visualisation de la carte et de vos logs
+\item Consulter l\textquotesingle{}aide , pour voir les raccourcis et les commandes
+\item Consulter le \char`\"{}\+A propos\char`\"{}
+\end{DoxyItemize}\hypertarget{index_step3}{}\subsection{Etape 3\+: Utiliser Geoloc}\label{index_step3}
+Une fois dans l\textquotesingle{}application, vous pouvez librement vous déplacer sur la carte grace à la souris, aux flèches directionnelles ou au bouton \char`\"{}flèches de l\textquotesingle{}interface\char`\"{}, il est possible de zoomer et dézoomer à l\textquotesingle{}aide la molette de la souris.
+
+Le panneau en haut à gauche gère les différents éléments d\textquotesingle{}affichage, respectivement l\textquotesingle{}affichage des points, clusters, routes, ainsi qu\textquotesingle{}un mode cinématique activable ou non fixant la caméra sur les points qui s\textquotesingle{}affichent
+
+Le panneau en Bas à droite lui, vous offre la possibilité de manipuler le temps, en pouvant dans l\textquotesingle{}ordre réinitialisé le temps, mettre sur pause lancer l\textquotesingle{}animation, et choisir la vitesse ( clics multiples ) Tous les points de tous les logs placés dans le dossier log sont chargés et affichés dans l\textquotesingle{}ordre chronologique
+
+Un clic droit sur un cluster permet d\textquotesingle{}afficher toutes les informations relatives à celui ci \+:
+\begin{DoxyItemize}
+\item Position en lat/lon
+\item Adresse complète
+\item Log de provenance
+\item Un diagramme d\textquotesingle{}affluence \+: fréquentation en fonction de tranches horaires
+\end{DoxyItemize}
+
+Enfin un bouton d\textquotesingle{}anonymisation en bas du panneau permettant de supprimer le cluster, les points à l\textquotesingle{}intérieur et les routes qui y mène La suppression génère un nouveau fichier log anonymisé avec le suffixe \+\_\+anon dans le dossier log
+
+Note à l\textquotesingle{}utilisateur \+: Suite à une anonymisation de log, on retrouvre le log anonymisé dans le dossier log avec le suffixe \+\_\+anon. Il est possible en cas de surcharge que ces fichiers \+\_\+anon génèrent des interférences aves les logs classiques. Il faut donc les déplacer hors du dossier \char`\"{}log\char`\"{}
+
+Bugs connus \+: -\/\+Deformation du diagramme lors d\textquotesingle{}un zoom
+
+Documentation réalisée par Hugo J\+O\+BY et Vincent M\+O\+Z\+Z\+I\+C\+O\+N\+A\+C\+CI. 

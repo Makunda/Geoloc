@@ -1,0 +1,72 @@
+\hypertarget{fichier_8h}{}\section{fichier.\+h File Reference}
+\label{fichier_8h}\index{fichier.\+h@{fichier.\+h}}
+
+
+Fonctions relatives au fichier. Toutes les fonctions necessitant une interface direct entre le programme et les différents fichiers. Utile pour la lecture et l\textquotesingle{}ecriture de logs anonymisés.  
+
+
+{\ttfamily \#include \char`\"{}structure.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}liste\+\_\+point.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}conversion.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpoint}{point} $\ast$ \hyperlink{fichier_8h_afdd0e59cb09d9fe7d622274970b62eb3}{ini\+\_\+point} (char $\ast$txt, double eps, \hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Initialisation d\textquotesingle{}un point. \end{DoxyCompactList}\item 
+void {\bfseries read\+\_\+log} (F\+I\+LE $\ast$f, \hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, double eps, \hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$nom\+\_\+fichier)\hypertarget{fichier_8h_aca5e66d7f0dcba26870de3a65c4fa910}{}\label{fichier_8h_aca5e66d7f0dcba26870de3a65c4fa910}
+
+\item 
+void \hyperlink{fichier_8h_a317abed82718c8bdd107c18e052b8ed8}{enregister\+\_\+log} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, char $\ast$nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Enregistrement d\textquotesingle{}un log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions relatives au fichier. Toutes les fonctions necessitant une interface direct entre le programme et les différents fichiers. Utile pour la lecture et l\textquotesingle{}ecriture de logs anonymisés. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Joby  5.\+0 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{fichier.\+h@{fichier.\+h}!enregister\+\_\+log@{enregister\+\_\+log}}
+\index{enregister\+\_\+log@{enregister\+\_\+log}!fichier.\+h@{fichier.\+h}}
+\subsubsection[{\texorpdfstring{enregister\+\_\+log(tete\+\_\+liste\+\_\+point $\ast$pt, char $\ast$nom\+\_\+fichier)}{enregister_log(tete_liste_point *pt, char *nom_fichier)}}]{\setlength{\rightskip}{0pt plus 5cm}void enregister\+\_\+log (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{char $\ast$}]{nom\+\_\+fichier}
+\end{DoxyParamCaption}
+)}\hypertarget{fichier_8h_a317abed82718c8bdd107c18e052b8ed8}{}\label{fichier_8h_a317abed82718c8bdd107c18e052b8ed8}
+
+
+Enregistrement d\textquotesingle{}un log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & liste contenant les points d\textquotesingle{}un log, nom\+\_\+fichier le nom du fichier log à enregistrer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{fichier.\+h@{fichier.\+h}!ini\+\_\+point@{ini\+\_\+point}}
+\index{ini\+\_\+point@{ini\+\_\+point}!fichier.\+h@{fichier.\+h}}
+\subsubsection[{\texorpdfstring{ini\+\_\+point(char $\ast$txt, double eps, element\+\_\+liste\+\_\+logs $\ast$nom\+\_\+fichier)}{ini_point(char *txt, double eps, element_liste_logs *nom_fichier)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf point}$\ast$ ini\+\_\+point (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{txt, }
+\item[{double}]{eps, }
+\item[{{\bf element\+\_\+liste\+\_\+logs} $\ast$}]{nom\+\_\+fichier}
+\end{DoxyParamCaption}
+)}\hypertarget{fichier_8h_afdd0e59cb09d9fe7d622274970b62eb3}{}\label{fichier_8h_afdd0e59cb09d9fe7d622274970b62eb3}
+
+
+Initialisation d\textquotesingle{}un point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & la chaine de caratere issue du log, eps epsilon du D\+B\+S\+C\+AN, nom\+\_\+fichier le nom du fichier log. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point si le point est correctement initialisé, N\+U\+LL sinon. 
+\end{DoxyReturn}

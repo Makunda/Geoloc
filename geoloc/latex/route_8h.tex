@@ -1,0 +1,174 @@
+\hypertarget{route_8h}{}\section{route.\+h File Reference}
+\label{route_8h}\index{route.\+h@{route.\+h}}
+
+
+Traitement des routes et fonctions liees.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$ \hyperlink{route_8h_a3e6bc9d318bf923607a0af83423e4f51}{init\+\_\+liste\+\_\+route} ()
+\begin{DoxyCompactList}\small\item\em Initialise la liste de route . \end{DoxyCompactList}\item 
+int \hyperlink{route_8h_ae9fbc8a15544a89ce34eccaaf8a1acf1}{liste\+\_\+vide\+\_\+route} (\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Verifie si la liste est vide ou non . \end{DoxyCompactList}\item 
+void \hyperlink{route_8h_a8ab6b465bdd74878ff3eaa48f0357e75}{ajout\+\_\+liste\+\_\+route} (\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$pt, \hyperlink{structroute}{route} r)
+\begin{DoxyCompactList}\small\item\em Ajout une route dans la liste de route pt. \end{DoxyCompactList}\item 
+void \hyperlink{route_8h_ae7b171a986eca89d3b3c88d42dfdebc5}{supprimer\+\_\+element\+\_\+route} (\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Supprimer le premier element de la liste de route pt. \end{DoxyCompactList}\item 
+void \hyperlink{route_8h_a59b557d00be2b9230d0f57c48066924c}{supprimer\+\_\+route} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structroute}{route} r)
+\begin{DoxyCompactList}\small\item\em Supprime toutes les routes r dans pt. On va parcourir la liste de point pt et supprimer tout les points de r dans pt. \end{DoxyCompactList}\item 
+void {\bfseries vider\+\_\+liste\+\_\+route} (\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$pt)\hypertarget{route_8h_a4a346971539dbf4a1b921e4e045c0dbe}{}\label{route_8h_a4a346971539dbf4a1b921e4e045c0dbe}
+
+\item 
+\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$ \hyperlink{route_8h_a459af62cf6833f3abd2baeae9d9638df}{supprimer\+\_\+element\+\_\+route\+\_\+liste} (\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$pt, \hyperlink{structelement__liste__route}{element\+\_\+liste\+\_\+route} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Supprime l\textquotesingle{}element p dans pt. \end{DoxyCompactList}\item 
+\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$ \hyperlink{route_8h_ab21fc511ee836391c7510079da69eabb}{route\+\_\+cluster} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Determine les routes entre clusters dans une liste de point La fonction va parcourir tout les points de la liste et \char`\"{}couper\char`\"{} les routes entre deux clusters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Traitement des routes et fonctions liees. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Joby  5.\+8 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{route.\+h@{route.\+h}!ajout\+\_\+liste\+\_\+route@{ajout\+\_\+liste\+\_\+route}}
+\index{ajout\+\_\+liste\+\_\+route@{ajout\+\_\+liste\+\_\+route}!route.\+h@{route.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+\_\+liste\+\_\+route(tete\+\_\+liste\+\_\+route $\ast$pt, route r)}{ajout_liste_route(tete_liste_route *pt, route r)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+\_\+liste\+\_\+route (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+route} $\ast$}]{pt, }
+\item[{{\bf route}}]{r}
+\end{DoxyParamCaption}
+)}\hypertarget{route_8h_a8ab6b465bdd74878ff3eaa48f0357e75}{}\label{route_8h_a8ab6b465bdd74878ff3eaa48f0357e75}
+
+
+Ajout une route dans la liste de route pt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt,pointeur} & sur la tete de liste, r route a ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{route.\+h@{route.\+h}!init\+\_\+liste\+\_\+route@{init\+\_\+liste\+\_\+route}}
+\index{init\+\_\+liste\+\_\+route@{init\+\_\+liste\+\_\+route}!route.\+h@{route.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+liste\+\_\+route()}{init_liste_route()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+route}$\ast$ init\+\_\+liste\+\_\+route (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{route_8h_a3e6bc9d318bf923607a0af83423e4f51}{}\label{route_8h_a3e6bc9d318bf923607a0af83423e4f51}
+
+
+Initialise la liste de route . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$) Liste de route 
+\end{DoxyReturn}
+\index{route.\+h@{route.\+h}!liste\+\_\+vide\+\_\+route@{liste\+\_\+vide\+\_\+route}}
+\index{liste\+\_\+vide\+\_\+route@{liste\+\_\+vide\+\_\+route}!route.\+h@{route.\+h}}
+\subsubsection[{\texorpdfstring{liste\+\_\+vide\+\_\+route(tete\+\_\+liste\+\_\+route $\ast$pt)}{liste_vide_route(tete_liste_route *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}int liste\+\_\+vide\+\_\+route (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+route} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{route_8h_ae9fbc8a15544a89ce34eccaaf8a1acf1}{}\label{route_8h_ae9fbc8a15544a89ce34eccaaf8a1acf1}
+
+
+Verifie si la liste est vide ou non . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt,pointeur} & sur la tete de liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(int) 1 si vide , 0 sinon 
+\end{DoxyReturn}
+\index{route.\+h@{route.\+h}!route\+\_\+cluster@{route\+\_\+cluster}}
+\index{route\+\_\+cluster@{route\+\_\+cluster}!route.\+h@{route.\+h}}
+\subsubsection[{\texorpdfstring{route\+\_\+cluster(tete\+\_\+liste\+\_\+point $\ast$pt)}{route_cluster(tete_liste_point *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+route}$\ast$ route\+\_\+cluster (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{route_8h_ab21fc511ee836391c7510079da69eabb}{}\label{route_8h_ab21fc511ee836391c7510079da69eabb}
+
+
+Determine les routes entre clusters dans une liste de point La fonction va parcourir tout les points de la liste et \char`\"{}couper\char`\"{} les routes entre deux clusters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (tete\+\_\+liste\+\_\+point} & $\ast$pt) , pointeur sur la tete de liste de point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$) Liste de route cree a partir de la liste de point 
+\end{DoxyReturn}
+\index{route.\+h@{route.\+h}!supprimer\+\_\+element\+\_\+route@{supprimer\+\_\+element\+\_\+route}}
+\index{supprimer\+\_\+element\+\_\+route@{supprimer\+\_\+element\+\_\+route}!route.\+h@{route.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+element\+\_\+route(tete\+\_\+liste\+\_\+route $\ast$pt)}{supprimer_element_route(tete_liste_route *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+\_\+element\+\_\+route (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+route} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{route_8h_ae7b171a986eca89d3b3c88d42dfdebc5}{}\label{route_8h_ae7b171a986eca89d3b3c88d42dfdebc5}
+
+
+Supprimer le premier element de la liste de route pt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt,pointeur} & sur la tete de liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{route.\+h@{route.\+h}!supprimer\+\_\+element\+\_\+route\+\_\+liste@{supprimer\+\_\+element\+\_\+route\+\_\+liste}}
+\index{supprimer\+\_\+element\+\_\+route\+\_\+liste@{supprimer\+\_\+element\+\_\+route\+\_\+liste}!route.\+h@{route.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+element\+\_\+route\+\_\+liste(tete\+\_\+liste\+\_\+route $\ast$pt, element\+\_\+liste\+\_\+route $\ast$p)}{supprimer_element_route_liste(tete_liste_route *pt, element_liste_route *p)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+route}$\ast$ supprimer\+\_\+element\+\_\+route\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+route} $\ast$}]{pt, }
+\item[{{\bf element\+\_\+liste\+\_\+route} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{route_8h_a459af62cf6833f3abd2baeae9d9638df}{}\label{route_8h_a459af62cf6833f3abd2baeae9d9638df}
+
+
+Supprime l\textquotesingle{}element p dans pt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt,pointeur} & sur la tete de liste de point, p \hyperlink{structelement__liste__route}{element\+\_\+liste\+\_\+route} a supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$) le pointeur vers la liste 
+\end{DoxyReturn}
+\index{route.\+h@{route.\+h}!supprimer\+\_\+route@{supprimer\+\_\+route}}
+\index{supprimer\+\_\+route@{supprimer\+\_\+route}!route.\+h@{route.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+route(tete\+\_\+liste\+\_\+point $\ast$pt, route r)}{supprimer_route(tete_liste_point *pt, route r)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+\_\+route (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf route}}]{r}
+\end{DoxyParamCaption}
+)}\hypertarget{route_8h_a59b557d00be2b9230d0f57c48066924c}{}\label{route_8h_a59b557d00be2b9230d0f57c48066924c}
+
+
+Supprime toutes les routes r dans pt. On va parcourir la liste de point pt et supprimer tout les points de r dans pt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt,pointeur} & sur la tete de liste de point, r route dont les entites sont a supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

@@ -1,0 +1,297 @@
+\hypertarget{cluster_8h}{}\section{cluster.\+h File Reference}
+\label{cluster_8h}\index{cluster.\+h@{cluster.\+h}}
+
+
+Traitement des points avec la detection des centres d\textquotesingle{}interets.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cluster_8h_a46027c2f21cf15210209d9d385f932e0}{randab} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Retour un nombre aleatoire. \end{DoxyCompactList}\item 
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$ \hyperlink{cluster_8h_ab0409522487d08e97ddf0e2e31cb9eff}{lister\+\_\+cluster} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Liste de cluster traitee. \end{DoxyCompactList}\item 
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$ \hyperlink{cluster_8h_a474ba77505eee7312892c2167b7b0470}{liste\+\_\+voisinage} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structpoint}{point} p, double eps)
+\begin{DoxyCompactList}\small\item\em Liste des plus proches voisins d\textquotesingle{}un point p dans la liste pt. \end{DoxyCompactList}\item 
+void \hyperlink{cluster_8h_a7bd17c17ceb2e0d7e76cd2b0daeec036}{caculer\+\_\+couleur} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, int interval)
+\begin{DoxyCompactList}\small\item\em Genere une couleur aleatoire dans un intervalle 0 -\/ intervalle, et l\textquotesingle{}assigne aux points. \end{DoxyCompactList}\item 
+void \hyperlink{cluster_8h_ab076bfbda0734f6b8502f9c29695b7cb}{etendre\+\_\+cluster} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$p, \hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$epsilon\+\_\+voisins, int id\+\_\+cluster, double eps, int min\+Point)
+\begin{DoxyCompactList}\small\item\em Etend la recherche des clusters et stocke les points dans epsilon\+\_\+voisins. \end{DoxyCompactList}\item 
+int \hyperlink{cluster_8h_a1343f7d93f1c27c12cb3d923d0bc7586}{D\+B\+S\+C\+AN} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, double eps, int Min\+Point)
+\begin{DoxyCompactList}\small\item\em Fonction D\+B\+S\+C\+AN calculant les centres d\textquotesingle{}interets. \end{DoxyCompactList}\item 
+\hyperlink{structdroite__affine}{droite\+\_\+affine} \hyperlink{cluster_8h_ad29c6fb89b5c5b6cc79ec31aabf3b025}{calc\+\_\+perpendiculaire} (\hyperlink{structcoordonnee}{coordonnee} p1, \hyperlink{structcoordonnee}{coordonnee} p2)\hypertarget{cluster_8h_ad29c6fb89b5c5b6cc79ec31aabf3b025}{}\label{cluster_8h_ad29c6fb89b5c5b6cc79ec31aabf3b025}
+
+\begin{DoxyCompactList}\small\item\em Ancienne fonction utilisee pour l\textquotesingle{}algorithme K-\/\+Means. \end{DoxyCompactList}\item 
+int \hyperlink{cluster_8h_a8fc95ee2e6ca0998f7d282a1e8478efe}{position\+\_\+droite} (\hyperlink{structdroite__affine}{droite\+\_\+affine} droite, \hyperlink{structpoint}{point} p1)\hypertarget{cluster_8h_a8fc95ee2e6ca0998f7d282a1e8478efe}{}\label{cluster_8h_a8fc95ee2e6ca0998f7d282a1e8478efe}
+
+\begin{DoxyCompactList}\small\item\em Ancienne fonction utilisee pour l\textquotesingle{}algorithme K-\/\+Means. \end{DoxyCompactList}\item 
+\hyperlink{structcoordonnee}{coordonnee} \hyperlink{cluster_8h_aad5758c115fdd677fc6cb801502c7133}{moyenne\+\_\+position} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Calcul la position moyenne des point de la liste. \end{DoxyCompactList}\item 
+\hyperlink{structpoint__ign}{point\+\_\+ign} $\ast$ \hyperlink{cluster_8h_ab8e5aa96b9f86c9b280d114eaab12d73}{malloc\+\_\+point} ()
+\begin{DoxyCompactList}\small\item\em Initialise un point I\+GN et le retourne. \end{DoxyCompactList}\item 
+void \hyperlink{cluster_8h_a9450493d274d7be8e78ce3c4261da0ee}{cluster\+\_\+base\+\_\+ign} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt\+\_\+cluster, F\+I\+LE $\ast$f\+\_\+index, F\+I\+LE $\ast$f\+\_\+traitement)
+\begin{DoxyCompactList}\small\item\em Relie les clusters et la base I\+GN. \end{DoxyCompactList}\item 
+void \hyperlink{cluster_8h_a7f7ff20b4237dc53ee69fe64e56708a9}{supprimer\+\_\+cluster} (\hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$element, \hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$cluster)
+\begin{DoxyCompactList}\small\item\em Supprime un cluster et ses routes. \end{DoxyCompactList}\item 
+int {\bfseries lister\+\_\+nombre\+\_\+cluster} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt)\hypertarget{cluster_8h_ae562164b365f2b10bdcc867f0892b56a}{}\label{cluster_8h_ae562164b365f2b10bdcc867f0892b56a}
+
+\item 
+void \hyperlink{cluster_8h_a3b9ded55786f42a54a9f9cdd9a563dd6}{nettoyer\+\_\+cluster} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, int Min\+Point)
+\begin{DoxyCompactList}\small\item\em Nettoye la liste des clusters et selectionne les clusters valides. \end{DoxyCompactList}\item 
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$ \hyperlink{cluster_8h_a1484c029c90e125e992f46cb796d1f48}{init\+\_\+liste\+\_\+temporelle\+\_\+cluster} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt\+\_\+log)
+\begin{DoxyCompactList}\small\item\em Initialise la liste de cluster fusionnés. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Traitement des points avec la detection des centres d\textquotesingle{}interets. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Joby  5.\+0 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{cluster.\+h@{cluster.\+h}!caculer\+\_\+couleur@{caculer\+\_\+couleur}}
+\index{caculer\+\_\+couleur@{caculer\+\_\+couleur}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{caculer\+\_\+couleur(tete\+\_\+liste\+\_\+point $\ast$pt, int interval)}{caculer_couleur(tete_liste_point *pt, int interval)}}]{\setlength{\rightskip}{0pt plus 5cm}void caculer\+\_\+couleur (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{int}]{interval}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a7bd17c17ceb2e0d7e76cd2b0daeec036}{}\label{cluster_8h_a7bd17c17ceb2e0d7e76cd2b0daeec036}
+
+
+Genere une couleur aleatoire dans un intervalle 0 -\/ intervalle, et l\textquotesingle{}assigne aux points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste pre-\/initialisee dans laquelle sont stockes les clusters, interval valeur maximal d\textquotesingle{}entite\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!cluster\+\_\+base\+\_\+ign@{cluster\+\_\+base\+\_\+ign}}
+\index{cluster\+\_\+base\+\_\+ign@{cluster\+\_\+base\+\_\+ign}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{cluster\+\_\+base\+\_\+ign(tete\+\_\+liste\+\_\+point $\ast$pt\+\_\+cluster, F\+I\+L\+E $\ast$f\+\_\+index, F\+I\+L\+E $\ast$f\+\_\+traitement)}{cluster_base_ign(tete_liste_point *pt_cluster, FILE *f_index, FILE *f_traitement)}}]{\setlength{\rightskip}{0pt plus 5cm}void cluster\+\_\+base\+\_\+ign (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt\+\_\+cluster, }
+\item[{F\+I\+LE $\ast$}]{f\+\_\+index, }
+\item[{F\+I\+LE $\ast$}]{f\+\_\+traitement}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a9450493d274d7be8e78ce3c4261da0ee}{}\label{cluster_8h_a9450493d274d7be8e78ce3c4261da0ee}
+
+
+Relie les clusters et la base I\+GN. 
+
+Trouve le point le plus proche du centre du cluster dans la base I\+GN. 
+\begin{DoxyParams}{Parameters}
+{\em pt\+\_\+cluster} & Liste des clusters, f\+\_\+index Fichier index du cluster, f\+\_\+traitement Fichier contenant la base I\+GN traitee.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!D\+B\+S\+C\+AN@{D\+B\+S\+C\+AN}}
+\index{D\+B\+S\+C\+AN@{D\+B\+S\+C\+AN}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{D\+B\+S\+C\+A\+N(tete\+\_\+liste\+\_\+point $\ast$pt, double eps, int Min\+Point)}{DBSCAN(tete_liste_point *pt, double eps, int MinPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}int D\+B\+S\+C\+AN (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{double}]{epsilon, }
+\item[{int}]{Min\+Point}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a1343f7d93f1c27c12cb3d923d0bc7586}{}\label{cluster_8h_a1343f7d93f1c27c12cb3d923d0bc7586}
+
+
+Fonction D\+B\+S\+C\+AN calculant les centres d\textquotesingle{}interets. 
+
+L\textquotesingle{}algorithme D\+B\+S\+C\+AN est un algorithme de partitionement basé sur la densité des clusters. Il prend deux parametres espilon, la distance minimale entre les point d\textquotesingle{}un cluster et min\+\_\+point le nombre de point minimum dans un cluster. 
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste pre-\/initialisee dans laquelle sont stockes les points, eps valeur de epsilon, min\+Point Minimum de point d\textquotesingle{}un cluster.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int nombre de cluster crees. 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!etendre\+\_\+cluster@{etendre\+\_\+cluster}}
+\index{etendre\+\_\+cluster@{etendre\+\_\+cluster}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{etendre\+\_\+cluster(tete\+\_\+liste\+\_\+point $\ast$pt, element\+\_\+liste\+\_\+point $\ast$p, tete\+\_\+liste\+\_\+point $\ast$epsilon\+\_\+voisins, int id\+\_\+cluster, double eps, int min\+Point)}{etendre_cluster(tete_liste_point *pt, element_liste_point *p, tete_liste_point *epsilon_voisins, int id_cluster, double eps, int minPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}void etendre\+\_\+cluster (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf element\+\_\+liste\+\_\+point} $\ast$}]{p, }
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{epsilon\+\_\+voisins, }
+\item[{int}]{id\+\_\+cluster, }
+\item[{double}]{eps, }
+\item[{int}]{min\+Point}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_ab076bfbda0734f6b8502f9c29695b7cb}{}\label{cluster_8h_ab076bfbda0734f6b8502f9c29695b7cb}
+
+
+Etend la recherche des clusters et stocke les points dans epsilon\+\_\+voisins. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste pre-\/initialisee dans laquelle sont stockes les points, p point, epsilon\+\_\+voisins liste des voisins, id\+\_\+cluster numero du cluster, eps valeur de epsilon, min\+Point Minimum de point d\textquotesingle{}un cluster. Fonction propre à l\textquotesingle{}algorithme D\+B\+S\+C\+AN.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!init\+\_\+liste\+\_\+temporelle\+\_\+cluster@{init\+\_\+liste\+\_\+temporelle\+\_\+cluster}}
+\index{init\+\_\+liste\+\_\+temporelle\+\_\+cluster@{init\+\_\+liste\+\_\+temporelle\+\_\+cluster}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+liste\+\_\+temporelle\+\_\+cluster(tete\+\_\+liste\+\_\+logs $\ast$pt\+\_\+log)}{init_liste_temporelle_cluster(tete_liste_logs *pt_log)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+point}$\ast$ init\+\_\+liste\+\_\+temporelle\+\_\+cluster (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt\+\_\+logs}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a1484c029c90e125e992f46cb796d1f48}{}\label{cluster_8h_a1484c029c90e125e992f46cb796d1f48}
+
+
+Initialise la liste de cluster fusionnés. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt\+\_\+log} & Liste contenant les logs.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la liste de clusters fusionnés 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!liste\+\_\+voisinage@{liste\+\_\+voisinage}}
+\index{liste\+\_\+voisinage@{liste\+\_\+voisinage}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{liste\+\_\+voisinage(tete\+\_\+liste\+\_\+point $\ast$pt, point p, double eps)}{liste_voisinage(tete_liste_point *pt, point p, double eps)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+point} $\ast$ liste\+\_\+voisinage (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf point}}]{p, }
+\item[{double}]{eps}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a474ba77505eee7312892c2167b7b0470}{}\label{cluster_8h_a474ba77505eee7312892c2167b7b0470}
+
+
+Liste des plus proches voisins d\textquotesingle{}un point p dans la liste pt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste pre-\/initialisee dans laquelle stocker les clusters, p point, eps valeur d\textquotesingle{}epsilon du D\+B\+S\+C\+AN Fonction propre à l\textquotesingle{}algorithme D\+B\+S\+C\+AN\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} le pointeur de la liste des plus proches voisins. 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!lister\+\_\+cluster@{lister\+\_\+cluster}}
+\index{lister\+\_\+cluster@{lister\+\_\+cluster}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{lister\+\_\+cluster(tete\+\_\+liste\+\_\+point $\ast$pt)}{lister_cluster(tete_liste_point *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+point}$\ast$ lister\+\_\+cluster (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_ab0409522487d08e97ddf0e2e31cb9eff}{}\label{cluster_8h_ab0409522487d08e97ddf0e2e31cb9eff}
+
+
+Liste de cluster traitee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste pre-\/initialisee dans laquelle stocker les clusters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} le pointeur de la liste contenant les clusters. 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!malloc\+\_\+point@{malloc\+\_\+point}}
+\index{malloc\+\_\+point@{malloc\+\_\+point}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{malloc\+\_\+point()}{malloc_point()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf point\+\_\+ign}$\ast$ malloc\+\_\+point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_ab8e5aa96b9f86c9b280d114eaab12d73}{}\label{cluster_8h_ab8e5aa96b9f86c9b280d114eaab12d73}
+
+
+Initialise un point I\+GN et le retourne. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur un \hyperlink{structpoint__ign}{point\+\_\+ign} initialise 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!moyenne\+\_\+position@{moyenne\+\_\+position}}
+\index{moyenne\+\_\+position@{moyenne\+\_\+position}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{moyenne\+\_\+position(tete\+\_\+liste\+\_\+point $\ast$pt)}{moyenne_position(tete_liste_point *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coordonnee} moyenne\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_aad5758c115fdd677fc6cb801502c7133}{}\label{cluster_8h_aad5758c115fdd677fc6cb801502c7133}
+
+
+Calcul la position moyenne des point de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste pre-\/initialisee dans laquelle sont stockes les points.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+coordonnee Les coordonnees moyenne en lat et lon de tout les point de la liste 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!nettoyer\+\_\+cluster@{nettoyer\+\_\+cluster}}
+\index{nettoyer\+\_\+cluster@{nettoyer\+\_\+cluster}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{nettoyer\+\_\+cluster(tete\+\_\+liste\+\_\+point $\ast$pt, int Min\+Point)}{nettoyer_cluster(tete_liste_point *pt, int MinPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}void nettoyer\+\_\+cluster (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{int}]{Min\+Point}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a3b9ded55786f42a54a9f9cdd9a563dd6}{}\label{cluster_8h_a3b9ded55786f42a54a9f9cdd9a563dd6}
+
+
+Nettoye la liste des clusters et selectionne les clusters valides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Liste contenant les clusters, Min\+Points Minimum de point dans un cluster.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!randab@{randab}}
+\index{randab@{randab}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{randab(int a, int b)}{randab(int a, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}int randab (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a46027c2f21cf15210209d9d385f932e0}{}\label{cluster_8h_a46027c2f21cf15210209d9d385f932e0}
+
+
+Retour un nombre aleatoire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Valeur minimum, b Valeur Maximale. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int valeur entiere entre a et b aleatoire. 
+\end{DoxyReturn}
+\index{cluster.\+h@{cluster.\+h}!supprimer\+\_\+cluster@{supprimer\+\_\+cluster}}
+\index{supprimer\+\_\+cluster@{supprimer\+\_\+cluster}!cluster.\+h@{cluster.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+cluster(element\+\_\+liste\+\_\+logs $\ast$element, element\+\_\+liste\+\_\+point $\ast$cluster)}{supprimer_cluster(element_liste_logs *element, element_liste_point *cluster)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+\_\+cluster (
+\begin{DoxyParamCaption}
+\item[{{\bf element\+\_\+liste\+\_\+logs} $\ast$}]{element, }
+\item[{{\bf element\+\_\+liste\+\_\+point} $\ast$}]{cluster}
+\end{DoxyParamCaption}
+)}\hypertarget{cluster_8h_a7f7ff20b4237dc53ee69fe64e56708a9}{}\label{cluster_8h_a7f7ff20b4237dc53ee69fe64e56708a9}
+
+
+Supprime un cluster et ses routes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & Log contenant le cluster, cluster le cluster a supprimer .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

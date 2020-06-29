@@ -1,0 +1,243 @@
+\hypertarget{conversion_8h}{}\section{conversion.\+h File Reference}
+\label{conversion_8h}\index{conversion.\+h@{conversion.\+h}}
+
+
+Fonction de Conversions.  
+
+
+{\ttfamily \#include \char`\"{}structure.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries T\+A\+I\+L\+LE}~2\hypertarget{conversion_8h_a7b29335add3a553ed85d0e3ace85629c}{}\label{conversion_8h_a7b29335add3a553ed85d0e3ace85629c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcoordonnee}{coordonnee} \hyperlink{conversion_8h_ae8abfb5d35c5b89ab091f2837e6a45d3}{Lambert\+To\+Gps} (\hyperlink{structcoordonnee}{coordonnee} co)
+\begin{DoxyCompactList}\small\item\em Fonction convertissant les coordonnes du Lambert93 en G\+PS . \end{DoxyCompactList}\item 
+float \hyperlink{conversion_8h_ae4d63e4e567c846f4cd208b435a59fef}{Degre\+Vers\+Radian} (float angle\+Degre)
+\begin{DoxyCompactList}\small\item\em Fonction convertissant les degre en radian. \end{DoxyCompactList}\item 
+void \hyperlink{conversion_8h_ad42718a6558e6c6eb360a0814a8e81ab}{lat\+Lon\+To\+XY} (\hyperlink{structpoint}{point} $\ast$A)
+\begin{DoxyCompactList}\small\item\em Fonction convertissant la latitude en longitude. \end{DoxyCompactList}\item 
+double \hyperlink{conversion_8h_a89d6d4878cf8387afc01fdb9aca27688}{calcul\+\_\+distance} (\hyperlink{structpoint}{point} $\ast$p1, \hyperlink{structpoint}{point} $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Calcul de la distance entre deux points. \end{DoxyCompactList}\item 
+double \hyperlink{conversion_8h_a6e2d3240ddc771033a5954e50cf76472}{calcul\+\_\+distance\+\_\+coordonne} (\hyperlink{structcoordonnee}{coordonnee} p1, \hyperlink{structcoordonnee}{coordonnee} p2)
+\begin{DoxyCompactList}\small\item\em Calcul de la distance entre deux coordonnee. \end{DoxyCompactList}\item 
+double \hyperlink{conversion_8h_ad8c621df8f9e965f8362e17d040f9fdd}{calcul\+\_\+distance\+\_\+pixel} (\hyperlink{structpoint}{point} $\ast$p1, \hyperlink{structpoint}{point} $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Calcul de la distance entre deux pixels. \end{DoxyCompactList}\item 
+\hyperlink{structpoint}{point} $\ast$ \hyperlink{conversion_8h_a4a67fc76949f26ff6f806f2ca5eeb0a7}{coordonnee\+\_\+vers\+\_\+point} (\hyperlink{structcoordonnee}{coordonnee} coor)
+\begin{DoxyCompactList}\small\item\em Convertit une coordonnees en point. \end{DoxyCompactList}\item 
+\hyperlink{structcoordonnee}{coordonnee} \hyperlink{conversion_8h_ae49b912545b49e4f13e88a1edce46c3d}{point\+\_\+vers\+\_\+coordonnee} (\hyperlink{structpoint}{point} $\ast$pnt)
+\begin{DoxyCompactList}\small\item\em Convertit un point en coordonnee. \end{DoxyCompactList}\item 
+double \hyperlink{conversion_8h_acab7a57f86d9920dbe9a268fe52dbef8}{calcul\+\_\+distance\+\_\+metre} (\hyperlink{structpoint}{point} $\ast$p1, \hyperlink{structpoint}{point} $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Retourne la distance en metre en deux points . \end{DoxyCompactList}\item 
+double \hyperlink{conversion_8h_a3b0a1faeece4a25254bf6318ed6154d6}{calcul\+\_\+vitesse\+\_\+mps} (\hyperlink{structpoint}{point} $\ast$p1, \hyperlink{structpoint}{point} $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Calcul la vitesse entre deux. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonction de Conversions. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Joby  5.\+0 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{conversion.\+h@{conversion.\+h}!calcul\+\_\+distance@{calcul\+\_\+distance}}
+\index{calcul\+\_\+distance@{calcul\+\_\+distance}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{calcul\+\_\+distance(point $\ast$p1, point $\ast$p2)}{calcul_distance(point *p1, point *p2)}}]{\setlength{\rightskip}{0pt plus 5cm}double calcul\+\_\+distance (
+\begin{DoxyParamCaption}
+\item[{{\bf point} $\ast$}]{p1, }
+\item[{{\bf point} $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_a89d6d4878cf8387afc01fdb9aca27688}{}\label{conversion_8h_a89d6d4878cf8387afc01fdb9aca27688}
+
+
+Calcul de la distance entre deux points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & et p2 les point dont ont doit calculer la distance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double la distance. 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!calcul\+\_\+distance\+\_\+coordonne@{calcul\+\_\+distance\+\_\+coordonne}}
+\index{calcul\+\_\+distance\+\_\+coordonne@{calcul\+\_\+distance\+\_\+coordonne}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{calcul\+\_\+distance\+\_\+coordonne(coordonnee p1, coordonnee p2)}{calcul_distance_coordonne(coordonnee p1, coordonnee p2)}}]{\setlength{\rightskip}{0pt plus 5cm}double calcul\+\_\+distance\+\_\+coordonne (
+\begin{DoxyParamCaption}
+\item[{{\bf coordonnee}}]{p1, }
+\item[{{\bf coordonnee}}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_a6e2d3240ddc771033a5954e50cf76472}{}\label{conversion_8h_a6e2d3240ddc771033a5954e50cf76472}
+
+
+Calcul de la distance entre deux coordonnee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & et p2 les coordonnee dont ont doit calculer la distance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double la distance. 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!calcul\+\_\+distance\+\_\+metre@{calcul\+\_\+distance\+\_\+metre}}
+\index{calcul\+\_\+distance\+\_\+metre@{calcul\+\_\+distance\+\_\+metre}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{calcul\+\_\+distance\+\_\+metre(point $\ast$p1, point $\ast$p2)}{calcul_distance_metre(point *p1, point *p2)}}]{\setlength{\rightskip}{0pt plus 5cm}double calcul\+\_\+distance\+\_\+metre (
+\begin{DoxyParamCaption}
+\item[{{\bf point} $\ast$}]{p1, }
+\item[{{\bf point} $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_acab7a57f86d9920dbe9a268fe52dbef8}{}\label{conversion_8h_acab7a57f86d9920dbe9a268fe52dbef8}
+
+
+Retourne la distance en metre en deux points . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & et p2 les points dont ont doit calculer la distance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double la distance en letre. 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!calcul\+\_\+distance\+\_\+pixel@{calcul\+\_\+distance\+\_\+pixel}}
+\index{calcul\+\_\+distance\+\_\+pixel@{calcul\+\_\+distance\+\_\+pixel}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{calcul\+\_\+distance\+\_\+pixel(point $\ast$p1, point $\ast$p2)}{calcul_distance_pixel(point *p1, point *p2)}}]{\setlength{\rightskip}{0pt plus 5cm}double calcul\+\_\+distance\+\_\+pixel (
+\begin{DoxyParamCaption}
+\item[{{\bf point} $\ast$}]{p1, }
+\item[{{\bf point} $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_ad8c621df8f9e965f8362e17d040f9fdd}{}\label{conversion_8h_ad8c621df8f9e965f8362e17d040f9fdd}
+
+
+Calcul de la distance entre deux pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & et p2 les pixels dont ont doit calculer la distance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double la distance. 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!calcul\+\_\+vitesse\+\_\+mps@{calcul\+\_\+vitesse\+\_\+mps}}
+\index{calcul\+\_\+vitesse\+\_\+mps@{calcul\+\_\+vitesse\+\_\+mps}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{calcul\+\_\+vitesse\+\_\+mps(point $\ast$p1, point $\ast$p2)}{calcul_vitesse_mps(point *p1, point *p2)}}]{\setlength{\rightskip}{0pt plus 5cm}double calcul\+\_\+vitesse\+\_\+mps (
+\begin{DoxyParamCaption}
+\item[{{\bf point} $\ast$}]{p1, }
+\item[{{\bf point} $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_a3b0a1faeece4a25254bf6318ed6154d6}{}\label{conversion_8h_a3b0a1faeece4a25254bf6318ed6154d6}
+
+
+Calcul la vitesse entre deux. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & et p2 les points dont ont doit calculer la vitesse instantanée. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double la vitesse instantanee. 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!coordonnee\+\_\+vers\+\_\+point@{coordonnee\+\_\+vers\+\_\+point}}
+\index{coordonnee\+\_\+vers\+\_\+point@{coordonnee\+\_\+vers\+\_\+point}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{coordonnee\+\_\+vers\+\_\+point(coordonnee coor)}{coordonnee_vers_point(coordonnee coor)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf point}$\ast$ coordonnee\+\_\+vers\+\_\+point (
+\begin{DoxyParamCaption}
+\item[{{\bf coordonnee}}]{coor}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_a4a67fc76949f26ff6f806f2ca5eeb0a7}{}\label{conversion_8h_a4a67fc76949f26ff6f806f2ca5eeb0a7}
+
+
+Convertit une coordonnees en point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coor} & coordonne a convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point retourne un point . 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!Degre\+Vers\+Radian@{Degre\+Vers\+Radian}}
+\index{Degre\+Vers\+Radian@{Degre\+Vers\+Radian}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{Degre\+Vers\+Radian(float angle\+Degre)}{DegreVersRadian(float angleDegre)}}]{\setlength{\rightskip}{0pt plus 5cm}float Degre\+Vers\+Radian (
+\begin{DoxyParamCaption}
+\item[{float}]{angle\+Degre}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_ae4d63e4e567c846f4cd208b435a59fef}{}\label{conversion_8h_ae4d63e4e567c846f4cd208b435a59fef}
+
+
+Fonction convertissant les degre en radian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle\+Degre} & l\textquotesingle{}angle en degre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float l\textquotesingle{}angle en radian . 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!Lambert\+To\+Gps@{Lambert\+To\+Gps}}
+\index{Lambert\+To\+Gps@{Lambert\+To\+Gps}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{Lambert\+To\+Gps(coordonnee co)}{LambertToGps(coordonnee co)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coordonnee} Lambert\+To\+Gps (
+\begin{DoxyParamCaption}
+\item[{{\bf coordonnee}}]{co}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_ae8abfb5d35c5b89ab091f2837e6a45d3}{}\label{conversion_8h_ae8abfb5d35c5b89ab091f2837e6a45d3}
+
+
+Fonction convertissant les coordonnes du Lambert93 en G\+PS . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em co} & Les coordonnees en Lambert 93. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+coordonnees en G\+PS. 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!lat\+Lon\+To\+XY@{lat\+Lon\+To\+XY}}
+\index{lat\+Lon\+To\+XY@{lat\+Lon\+To\+XY}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{lat\+Lon\+To\+X\+Y(point $\ast$\+A)}{latLonToXY(point *A)}}]{\setlength{\rightskip}{0pt plus 5cm}void lat\+Lon\+To\+XY (
+\begin{DoxyParamCaption}
+\item[{{\bf point} $\ast$}]{A}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_ad42718a6558e6c6eb360a0814a8e81ab}{}\label{conversion_8h_ad42718a6558e6c6eb360a0814a8e81ab}
+
+
+Fonction convertissant la latitude en longitude. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & point dont les coordonnees sont a convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{conversion.\+h@{conversion.\+h}!point\+\_\+vers\+\_\+coordonnee@{point\+\_\+vers\+\_\+coordonnee}}
+\index{point\+\_\+vers\+\_\+coordonnee@{point\+\_\+vers\+\_\+coordonnee}!conversion.\+h@{conversion.\+h}}
+\subsubsection[{\texorpdfstring{point\+\_\+vers\+\_\+coordonnee(point $\ast$pnt)}{point_vers_coordonnee(point *pnt)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coordonnee} point\+\_\+vers\+\_\+coordonnee (
+\begin{DoxyParamCaption}
+\item[{{\bf point} $\ast$}]{pnt}
+\end{DoxyParamCaption}
+)}\hypertarget{conversion_8h_ae49b912545b49e4f13e88a1edce46c3d}{}\label{conversion_8h_ae49b912545b49e4f13e88a1edce46c3d}
+
+
+Convertit un point en coordonnee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & point a convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+coordonnee point convertit. 
+\end{DoxyReturn}

@@ -1,0 +1,242 @@
+\hypertarget{logs_8h}{}\section{logs.\+h File Reference}
+\label{logs_8h}\index{logs.\+h@{logs.\+h}}
+
+
+gestion de la liste des logs.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$ \hyperlink{logs_8h_ab69e08f370081d3f748a1ab281b3a037}{init\+\_\+liste\+\_\+logs} ()
+\begin{DoxyCompactList}\small\item\em Initialise une liste de logs . Cette liste contiendra une liste d\textquotesingle{}element log, afin de gerer plusieurs traces. Ces elements eux-\/même de point, une liste de cluster et de route. \end{DoxyCompactList}\item 
+\hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$ \hyperlink{logs_8h_afea96e885838f12ee2dfab3de5f9131a}{init\+\_\+element\+\_\+log} (F\+I\+LE $\ast$fichier\+\_\+log, char $\ast$id, \hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt\+\_\+cluster, \hyperlink{structtete__liste__route}{tete\+\_\+liste\+\_\+route} $\ast$pt\+\_\+route, \hyperlink{structcouleur}{couleur} color)
+\begin{DoxyCompactList}\small\item\em Initialise un element de la liste log . \end{DoxyCompactList}\item 
+int \hyperlink{logs_8h_a9ac7584dce22283fa0c45d441c70cfa9}{liste\+\_\+vide\+\_\+logs} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Verifie si la liste est vide ou non . \end{DoxyCompactList}\item 
+\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$ \hyperlink{logs_8h_a3fec55075487f2503def4541db6a3d51}{init\+\_\+liste\+\_\+temporelle} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt\+\_\+logs)
+\begin{DoxyCompactList}\small\item\em Initialise la liste temporelle . La liste temporelle est une liste de point, contenant tout les points de tout les logs. Elle permet un affichage dynamique de l\textquotesingle{}apparition des traces. \end{DoxyCompactList}\item 
+void \hyperlink{logs_8h_a34699046156fc16a047f74b1820c9bb0}{ajout\+\_\+liste\+\_\+logs} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt, \hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$nouveau)
+\begin{DoxyCompactList}\small\item\em Ajoute un element log dans la liste log . \end{DoxyCompactList}\item 
+\hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$ \hyperlink{logs_8h_a02b37dba4869c04ff9a653cc9d0af3a2}{main\+\_\+logs} (char $\ast$path\+\_\+fichier, char $\ast$nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Fonction \char`\"{}main\char`\"{} pour chacun des logs. Elle permet d\textquotesingle{}initialisé toute les paramètre, comme l\textquotesingle{}extraction des donnnes, la deinition des différentes listes, etc.. \end{DoxyCompactList}\item 
+void \hyperlink{logs_8h_a99ba2724a801164761ae42e4d842c38e}{supprimer\+\_\+element\+\_\+logs} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Supprime le premier element log dans une liste log . \end{DoxyCompactList}\item 
+void \hyperlink{logs_8h_a05ad703386f5f509106e8f59f2f15ba3}{supprimer\+\_\+element\+\_\+logs\+\_\+liste} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt, \hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Supprime un element log dans une liste log . \end{DoxyCompactList}\item 
+void \hyperlink{logs_8h_a205cfe767bfb7e889caeadc96ffc2a70}{vider\+\_\+liste\+\_\+logs} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Vide la liste de tout element . \end{DoxyCompactList}\item 
+\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$ \hyperlink{logs_8h_a55bcdd2ff0585897dcbad1dc9b7f6fee}{insertion\+\_\+logs} ()
+\begin{DoxyCompactList}\small\item\em Initialise la liste des logs et la remplit . La fonction \hyperlink{logs_8h_a55bcdd2ff0585897dcbad1dc9b7f6fee}{insertion\+\_\+logs()} va lancer le main pour chacun des logs dans le dossier geoloc/logs. \end{DoxyCompactList}\item 
+\hyperlink{structcouleur}{couleur} {\bfseries random\+Couleur} ()\hypertarget{logs_8h_ae6e972b34ca80ca19188a7b753fcadfc}{}\label{logs_8h_ae6e972b34ca80ca19188a7b753fcadfc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+gestion de la liste des logs. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Joby  5.\+1 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{logs.\+h@{logs.\+h}!ajout\+\_\+liste\+\_\+logs@{ajout\+\_\+liste\+\_\+logs}}
+\index{ajout\+\_\+liste\+\_\+logs@{ajout\+\_\+liste\+\_\+logs}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+\_\+liste\+\_\+logs(tete\+\_\+liste\+\_\+logs $\ast$pt, element\+\_\+liste\+\_\+logs $\ast$nouveau)}{ajout_liste_logs(tete_liste_logs *pt, element_liste_logs *nouveau)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+\_\+liste\+\_\+logs (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt, }
+\item[{{\bf element\+\_\+liste\+\_\+logs} $\ast$}]{nouveau}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a34699046156fc16a047f74b1820c9bb0}{}\label{logs_8h_a34699046156fc16a047f74b1820c9bb0}
+
+
+Ajoute un element log dans la liste log . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (tete\+\_\+liste\+\_\+logs} & $\ast$) pt, tete de liste de log, (\hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$) nouveau, element liste log \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!init\+\_\+element\+\_\+log@{init\+\_\+element\+\_\+log}}
+\index{init\+\_\+element\+\_\+log@{init\+\_\+element\+\_\+log}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+element\+\_\+log(\+F\+I\+L\+E $\ast$fichier\+\_\+log, char $\ast$id, tete\+\_\+liste\+\_\+point $\ast$pt, tete\+\_\+liste\+\_\+point $\ast$pt\+\_\+cluster, tete\+\_\+liste\+\_\+route $\ast$pt\+\_\+route, couleur color)}{init_element_log(FILE *fichier_log, char *id, tete_liste_point *pt, tete_liste_point *pt_cluster, tete_liste_route *pt_route, couleur color)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element\+\_\+liste\+\_\+logs}$\ast$ init\+\_\+element\+\_\+log (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{fichier\+\_\+log, }
+\item[{char $\ast$}]{id, }
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt\+\_\+cluster, }
+\item[{{\bf tete\+\_\+liste\+\_\+route} $\ast$}]{pt\+\_\+route, }
+\item[{{\bf couleur}}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_afea96e885838f12ee2dfab3de5f9131a}{}\label{logs_8h_afea96e885838f12ee2dfab3de5f9131a}
+
+
+Initialise un element de la liste log . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (\+F\+I\+LE} & $\ast$) fichier\+\_\+log , le fichier lié au log, (char$\ast$) id Le nom du fichier, pt liste des points du log, pt\+\_\+cluster liste des clusters du log, pt\+\_\+route liste des routes du log, color la couleur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$) un element de liste log. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!init\+\_\+liste\+\_\+logs@{init\+\_\+liste\+\_\+logs}}
+\index{init\+\_\+liste\+\_\+logs@{init\+\_\+liste\+\_\+logs}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+liste\+\_\+logs()}{init_liste_logs()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+logs}$\ast$ init\+\_\+liste\+\_\+logs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_ab69e08f370081d3f748a1ab281b3a037}{}\label{logs_8h_ab69e08f370081d3f748a1ab281b3a037}
+
+
+Initialise une liste de logs . Cette liste contiendra une liste d\textquotesingle{}element log, afin de gerer plusieurs traces. Ces elements eux-\/même de point, une liste de cluster et de route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$ pointeur sur la tete de liste. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!init\+\_\+liste\+\_\+temporelle@{init\+\_\+liste\+\_\+temporelle}}
+\index{init\+\_\+liste\+\_\+temporelle@{init\+\_\+liste\+\_\+temporelle}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+liste\+\_\+temporelle(tete\+\_\+liste\+\_\+logs $\ast$pt\+\_\+logs)}{init_liste_temporelle(tete_liste_logs *pt_logs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+point}$\ast$ init\+\_\+liste\+\_\+temporelle (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt\+\_\+logs}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a3fec55075487f2503def4541db6a3d51}{}\label{logs_8h_a3fec55075487f2503def4541db6a3d51}
+
+
+Initialise la liste temporelle . La liste temporelle est une liste de point, contenant tout les points de tout les logs. Elle permet un affichage dynamique de l\textquotesingle{}apparition des traces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs}} & $\ast$pt , le pointeur sur la liste de log \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$) La tete de liste contenant tout les points. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!insertion\+\_\+logs@{insertion\+\_\+logs}}
+\index{insertion\+\_\+logs@{insertion\+\_\+logs}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{insertion\+\_\+logs()}{insertion_logs()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tete\+\_\+liste\+\_\+logs}$\ast$ insertion\+\_\+logs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a55bcdd2ff0585897dcbad1dc9b7f6fee}{}\label{logs_8h_a55bcdd2ff0585897dcbad1dc9b7f6fee}
+
+
+Initialise la liste des logs et la remplit . La fonction \hyperlink{logs_8h_a55bcdd2ff0585897dcbad1dc9b7f6fee}{insertion\+\_\+logs()} va lancer le main pour chacun des logs dans le dossier geoloc/logs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$) tete\+\_\+liste\+\_\+log intialise 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!liste\+\_\+vide\+\_\+logs@{liste\+\_\+vide\+\_\+logs}}
+\index{liste\+\_\+vide\+\_\+logs@{liste\+\_\+vide\+\_\+logs}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{liste\+\_\+vide\+\_\+logs(tete\+\_\+liste\+\_\+logs $\ast$pt)}{liste_vide_logs(tete_liste_logs *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}int liste\+\_\+vide\+\_\+logs (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a9ac7584dce22283fa0c45d441c70cfa9}{}\label{logs_8h_a9ac7584dce22283fa0c45d441c70cfa9}
+
+
+Verifie si la liste est vide ou non . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs}} & $\ast$pt , le pointeur sur la liste de log \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(int) 1 si vide , 0 sinon. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!main\+\_\+logs@{main\+\_\+logs}}
+\index{main\+\_\+logs@{main\+\_\+logs}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{main\+\_\+logs(char $\ast$path\+\_\+fichier, char $\ast$nom\+\_\+fichier)}{main_logs(char *path_fichier, char *nom_fichier)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element\+\_\+liste\+\_\+logs}$\ast$ main\+\_\+logs (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path\+\_\+fichier, }
+\item[{char $\ast$}]{nom\+\_\+fichier}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a02b37dba4869c04ff9a653cc9d0af3a2}{}\label{logs_8h_a02b37dba4869c04ff9a653cc9d0af3a2}
+
+
+Fonction \char`\"{}main\char`\"{} pour chacun des logs. Elle permet d\textquotesingle{}initialisé toute les paramètre, comme l\textquotesingle{}extraction des donnnes, la deinition des différentes listes, etc.. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (char} & $\ast$) path\+\_\+fichier , le chemin du fichier , (char $\ast$) nom\+\_\+fichier , le nom du fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$) un element de liste log. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!supprimer\+\_\+element\+\_\+logs@{supprimer\+\_\+element\+\_\+logs}}
+\index{supprimer\+\_\+element\+\_\+logs@{supprimer\+\_\+element\+\_\+logs}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+element\+\_\+logs(tete\+\_\+liste\+\_\+logs $\ast$pt)}{supprimer_element_logs(tete_liste_logs *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+\_\+element\+\_\+logs (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a99ba2724a801164761ae42e4d842c38e}{}\label{logs_8h_a99ba2724a801164761ae42e4d842c38e}
+
+
+Supprime le premier element log dans une liste log . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (tete\+\_\+liste\+\_\+logs} & $\ast$) pt, tete de liste de log \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!supprimer\+\_\+element\+\_\+logs\+\_\+liste@{supprimer\+\_\+element\+\_\+logs\+\_\+liste}}
+\index{supprimer\+\_\+element\+\_\+logs\+\_\+liste@{supprimer\+\_\+element\+\_\+logs\+\_\+liste}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+\_\+element\+\_\+logs\+\_\+liste(tete\+\_\+liste\+\_\+logs $\ast$pt, element\+\_\+liste\+\_\+logs $\ast$p)}{supprimer_element_logs_liste(tete_liste_logs *pt, element_liste_logs *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+\_\+element\+\_\+logs\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt, }
+\item[{{\bf element\+\_\+liste\+\_\+logs} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a05ad703386f5f509106e8f59f2f15ba3}{}\label{logs_8h_a05ad703386f5f509106e8f59f2f15ba3}
+
+
+Supprime un element log dans une liste log . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (tete\+\_\+liste\+\_\+logs} & $\ast$) pt, tete de liste de log, (\hyperlink{structelement__liste__logs}{element\+\_\+liste\+\_\+logs} $\ast$) p , element log a supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{logs.\+h@{logs.\+h}!vider\+\_\+liste\+\_\+logs@{vider\+\_\+liste\+\_\+logs}}
+\index{vider\+\_\+liste\+\_\+logs@{vider\+\_\+liste\+\_\+logs}!logs.\+h@{logs.\+h}}
+\subsubsection[{\texorpdfstring{vider\+\_\+liste\+\_\+logs(tete\+\_\+liste\+\_\+logs $\ast$pt)}{vider_liste_logs(tete_liste_logs *pt)}}]{\setlength{\rightskip}{0pt plus 5cm}void vider\+\_\+liste\+\_\+logs (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{logs_8h_a205cfe767bfb7e889caeadc96ffc2a70}{}\label{logs_8h_a205cfe767bfb7e889caeadc96ffc2a70}
+
+
+Vide la liste de tout element . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (tete\+\_\+liste\+\_\+logs} & $\ast$) pt, tete de liste de log a vider \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}

@@ -1,0 +1,81 @@
+\hypertarget{graphic_8h}{}\section{graphic.\+h File Reference}
+\label{graphic_8h}\index{graphic.\+h@{graphic.\+h}}
+
+
+Fonctions relatives à la visualisation.  
+
+
+{\ttfamily \#include \char`\"{}structure.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{graphic_8h_aa4f8ea40228c3c3a9a7143b1d1ad8956}{R\+A\+D\+I\+US}~10
+\item 
+\#define \hyperlink{graphic_8h_a498d9f026138406895e9a34b504ac6a6}{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}~1280
+\item 
+\#define \hyperlink{graphic_8h_a5473cf64fa979b48335079c99532e243}{W\+I\+N\+D\+O\+W\+\_\+\+H\+E\+I\+G\+HT}~720
+\item 
+\#define \hyperlink{graphic_8h_abeecfb58b7689ac52248465a6502c106}{Z\+O\+OM}~2.\+0
+\item 
+\#define \hyperlink{graphic_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}~100
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{graphic_8h_a4a48be939a41d091e42bc2b31b551135}{graphic} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l, \hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$liste\+\_\+retour, \hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$liste\+\_\+cluster)
+\begin{DoxyCompactList}\small\item\em Boucle graphique principale, gère l\textquotesingle{}affichage et la gestion des évènements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions relatives à la visualisation. 
+
+\begin{DoxyAuthor}{Author}
+Vincent Mozziconacci  5.\+0 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\index{graphic.\+h@{graphic.\+h}!O\+F\+F\+S\+ET@{O\+F\+F\+S\+ET}}
+\index{O\+F\+F\+S\+ET@{O\+F\+F\+S\+ET}!graphic.\+h@{graphic.\+h}}
+\subsubsection[{\texorpdfstring{O\+F\+F\+S\+ET}{OFFSET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+F\+F\+S\+ET~100}\hypertarget{graphic_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{}\label{graphic_8h_a21005f9f4e2ce7597c5eb4351816d7e2}
+Longueur du pas du deplacement au clavier \index{graphic.\+h@{graphic.\+h}!R\+A\+D\+I\+US@{R\+A\+D\+I\+US}}
+\index{R\+A\+D\+I\+US@{R\+A\+D\+I\+US}!graphic.\+h@{graphic.\+h}}
+\subsubsection[{\texorpdfstring{R\+A\+D\+I\+US}{RADIUS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+A\+D\+I\+US~10}\hypertarget{graphic_8h_aa4f8ea40228c3c3a9a7143b1d1ad8956}{}\label{graphic_8h_aa4f8ea40228c3c3a9a7143b1d1ad8956}
+Rayon par défaut des points affichés \index{graphic.\+h@{graphic.\+h}!W\+I\+N\+D\+O\+W\+\_\+\+H\+E\+I\+G\+HT@{W\+I\+N\+D\+O\+W\+\_\+\+H\+E\+I\+G\+HT}}
+\index{W\+I\+N\+D\+O\+W\+\_\+\+H\+E\+I\+G\+HT@{W\+I\+N\+D\+O\+W\+\_\+\+H\+E\+I\+G\+HT}!graphic.\+h@{graphic.\+h}}
+\subsubsection[{\texorpdfstring{W\+I\+N\+D\+O\+W\+\_\+\+H\+E\+I\+G\+HT}{WINDOW_HEIGHT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+N\+D\+O\+W\+\_\+\+H\+E\+I\+G\+HT~720}\hypertarget{graphic_8h_a5473cf64fa979b48335079c99532e243}{}\label{graphic_8h_a5473cf64fa979b48335079c99532e243}
+Hauteur par défaut de la fenêtre d\textquotesingle{}affichage \index{graphic.\+h@{graphic.\+h}!W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH@{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}}
+\index{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH@{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}!graphic.\+h@{graphic.\+h}}
+\subsubsection[{\texorpdfstring{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}{WINDOW_WIDTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH~1280}\hypertarget{graphic_8h_a498d9f026138406895e9a34b504ac6a6}{}\label{graphic_8h_a498d9f026138406895e9a34b504ac6a6}
+Largeur par défaut de la fenêtre d\textquotesingle{}affichage \index{graphic.\+h@{graphic.\+h}!Z\+O\+OM@{Z\+O\+OM}}
+\index{Z\+O\+OM@{Z\+O\+OM}!graphic.\+h@{graphic.\+h}}
+\subsubsection[{\texorpdfstring{Z\+O\+OM}{ZOOM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+O\+OM~2.\+0}\hypertarget{graphic_8h_abeecfb58b7689ac52248465a6502c106}{}\label{graphic_8h_abeecfb58b7689ac52248465a6502c106}
+Pas du niveau de zoom 
+
+\subsection{Function Documentation}
+\index{graphic.\+h@{graphic.\+h}!graphic@{graphic}}
+\index{graphic@{graphic}!graphic.\+h@{graphic.\+h}}
+\subsubsection[{\texorpdfstring{graphic(tete\+\_\+liste\+\_\+point $\ast$l, tete\+\_\+liste\+\_\+logs $\ast$liste\+\_\+retour, tete\+\_\+liste\+\_\+point $\ast$liste\+\_\+cluster)}{graphic(tete_liste_point *l, tete_liste_logs *liste_retour, tete_liste_point *liste_cluster)}}]{\setlength{\rightskip}{0pt plus 5cm}int graphic (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{l, }
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{liste\+\_\+retour, }
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{liste\+\_\+cluster}
+\end{DoxyParamCaption}
+)}\hypertarget{graphic_8h_a4a48be939a41d091e42bc2b31b551135}{}\label{graphic_8h_a4a48be939a41d091e42bc2b31b551135}
+
+
+Boucle graphique principale, gère l\textquotesingle{}affichage et la gestion des évènements. 
+
+(\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$l, \hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$liste\+\_\+retour) 
+\begin{DoxyParams}{Parameters}
+{\em l} & Pointeur sur la liste des points triés chronologiquement \\
+\hline
+{\em liste\+\_\+retour} & Pointeur sur la liste contenant toutes les listes de points, de cluster \\
+\hline
+{\em liste\+\_\+cluster} & Pointeur sur la liste des cluster temporelle (résultant de fusion de cluster, implémenté mais pas utilisé) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 lorsque la boucle graphique s\textquotesingle{}est executé correctement 
+\end{DoxyReturn}

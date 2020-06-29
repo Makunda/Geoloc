@@ -1,0 +1,110 @@
+\hypertarget{stats_8h}{}\section{stats.\+h File Reference}
+\label{stats_8h}\index{stats.\+h@{stats.\+h}}
+
+
+Satistiques liés aux clusters.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$ \hyperlink{stats_8h_aba815d2bc1e967a54b0a211a32890f87}{init\+\_\+tab\+\_\+heure} ()
+\begin{DoxyCompactList}\small\item\em Initialise un tableau d\textquotesingle{}heure . \end{DoxyCompactList}\item 
+void {\bfseries afficher\+\_\+tab} (int $\ast$$\ast$tab)\hypertarget{stats_8h_a65a7800d28355fcf2447a93c87cca35f}{}\label{stats_8h_a65a7800d28355fcf2447a93c87cca35f}
+
+\item 
+void \hyperlink{stats_8h_ad0fb00d0c4b1cdda4fcc8d87aff70fff}{remplir\+\_\+tab\+\_\+heure} (\hyperlink{structtete__liste__point}{tete\+\_\+liste\+\_\+point} $\ast$pt, \hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$p\+\_\+cluster)
+\begin{DoxyCompactList}\small\item\em intialise et remplie le talbeau horaire de p\+\_\+cluster . \end{DoxyCompactList}\item 
+void \hyperlink{stats_8h_a6343e120d6f6cd25d4dc17dd65e30cca}{remplir\+\_\+tab\+\_\+heure\+\_\+logs} (\hyperlink{structtete__liste__logs}{tete\+\_\+liste\+\_\+logs} $\ast$pt\+\_\+logs)
+\begin{DoxyCompactList}\small\item\em intialise et remplie tout les talbeaux horaires de tout les clusters de pt\+\_\+log . \end{DoxyCompactList}\item 
+int $\ast$$\ast$ \hyperlink{stats_8h_af53e8e20c0638568d6707ff13007270d}{fusion\+\_\+tab\+\_\+heure} (\hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$p1, \hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Fusionne deux tableaux horaires en un nouveau . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Satistiques liés aux clusters. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Joby  5.\+7 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{stats.\+h@{stats.\+h}!fusion\+\_\+tab\+\_\+heure@{fusion\+\_\+tab\+\_\+heure}}
+\index{fusion\+\_\+tab\+\_\+heure@{fusion\+\_\+tab\+\_\+heure}!stats.\+h@{stats.\+h}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+tab\+\_\+heure(element\+\_\+liste\+\_\+point $\ast$p1, element\+\_\+liste\+\_\+point $\ast$p2)}{fusion_tab_heure(element_liste_point *p1, element_liste_point *p2)}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ fusion\+\_\+tab\+\_\+heure (
+\begin{DoxyParamCaption}
+\item[{{\bf element\+\_\+liste\+\_\+point} $\ast$}]{p1, }
+\item[{{\bf element\+\_\+liste\+\_\+point} $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{stats_8h_af53e8e20c0638568d6707ff13007270d}{}\label{stats_8h_af53e8e20c0638568d6707ff13007270d}
+
+
+Fusionne deux tableaux horaires en un nouveau . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (element\+\_\+liste\+\_\+point} & $\ast$p1), element a fusionner , (\hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$p2), element a fusionner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $\ast$$\ast$ nouveau tableau resultant de la fusion. 
+\end{DoxyReturn}
+\index{stats.\+h@{stats.\+h}!init\+\_\+tab\+\_\+heure@{init\+\_\+tab\+\_\+heure}}
+\index{init\+\_\+tab\+\_\+heure@{init\+\_\+tab\+\_\+heure}!stats.\+h@{stats.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+tab\+\_\+heure()}{init_tab_heure()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ init\+\_\+tab\+\_\+heure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{stats_8h_aba815d2bc1e967a54b0a211a32890f87}{}\label{stats_8h_aba815d2bc1e967a54b0a211a32890f87}
+
+
+Initialise un tableau d\textquotesingle{}heure . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(int $\ast$$\ast$) Tableau d\textquotesingle{}heure initialise. 
+\end{DoxyReturn}
+\index{stats.\+h@{stats.\+h}!remplir\+\_\+tab\+\_\+heure@{remplir\+\_\+tab\+\_\+heure}}
+\index{remplir\+\_\+tab\+\_\+heure@{remplir\+\_\+tab\+\_\+heure}!stats.\+h@{stats.\+h}}
+\subsubsection[{\texorpdfstring{remplir\+\_\+tab\+\_\+heure(tete\+\_\+liste\+\_\+point $\ast$pt, element\+\_\+liste\+\_\+point $\ast$p\+\_\+cluster)}{remplir_tab_heure(tete_liste_point *pt, element_liste_point *p_cluster)}}]{\setlength{\rightskip}{0pt plus 5cm}void remplir\+\_\+tab\+\_\+heure (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+point} $\ast$}]{pt, }
+\item[{{\bf element\+\_\+liste\+\_\+point} $\ast$}]{p\+\_\+cluster}
+\end{DoxyParamCaption}
+)}\hypertarget{stats_8h_ad0fb00d0c4b1cdda4fcc8d87aff70fff}{}\label{stats_8h_ad0fb00d0c4b1cdda4fcc8d87aff70fff}
+
+
+intialise et remplie le talbeau horaire de p\+\_\+cluster . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (tete\+\_\+liste\+\_\+point} & $\ast$pt), liste de point pt, (\hyperlink{structelement__liste__point}{element\+\_\+liste\+\_\+point} $\ast$p\+\_\+cluster), element de liste cluster a remplir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{stats.\+h@{stats.\+h}!remplir\+\_\+tab\+\_\+heure\+\_\+logs@{remplir\+\_\+tab\+\_\+heure\+\_\+logs}}
+\index{remplir\+\_\+tab\+\_\+heure\+\_\+logs@{remplir\+\_\+tab\+\_\+heure\+\_\+logs}!stats.\+h@{stats.\+h}}
+\subsubsection[{\texorpdfstring{remplir\+\_\+tab\+\_\+heure\+\_\+logs(tete\+\_\+liste\+\_\+logs $\ast$pt\+\_\+logs)}{remplir_tab_heure_logs(tete_liste_logs *pt_logs)}}]{\setlength{\rightskip}{0pt plus 5cm}void remplir\+\_\+tab\+\_\+heure\+\_\+logs (
+\begin{DoxyParamCaption}
+\item[{{\bf tete\+\_\+liste\+\_\+logs} $\ast$}]{pt\+\_\+logs}
+\end{DoxyParamCaption}
+)}\hypertarget{stats_8h_a6343e120d6f6cd25d4dc17dd65e30cca}{}\label{stats_8h_a6343e120d6f6cd25d4dc17dd65e30cca}
+
+
+intialise et remplie tout les talbeaux horaires de tout les clusters de pt\+\_\+log . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (tete\+\_\+liste\+\_\+logs} & $\ast$pt\+\_\+logs), liste devant etre intialise \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}

@@ -1,0 +1,76 @@
+\hypertarget{stat__graph_8h}{}\section{stat\+\_\+graph.\+h File Reference}
+\label{stat__graph_8h}\index{stat\+\_\+graph.\+h@{stat\+\_\+graph.\+h}}
+
+
+Fonctions relatives à la visualisation des statistiques.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{stat__graph_8h_a28ccad37b8e8c3a5361c64c29a6bf959}{build\+Quad} (sf\+Vertex\+Array $\ast$array, int offset, float factor, float size, sf\+Float\+Rect rect\+Sprite, float zoom\+Factor)
+\begin{DoxyCompactList}\small\item\em Construit des quadrilatères destinés à être affiché dans le diagramme de fréquentation des clusters. \end{DoxyCompactList}\item 
+int \hyperlink{stat__graph_8h_aa8514c484ccd931c28df9f582968acb3}{max\+\_\+tab} (int $\ast$$\ast$tab)
+\begin{DoxyCompactList}\small\item\em Renvoie le maximum d\textquotesingle{}un tableau. La fonction permet de déterminer la valeur maximale du diagramme, elle sera la limite de toutes les barres du diagramme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions relatives à la visualisation des statistiques. 
+
+\begin{DoxyAuthor}{Author}
+Vincent Mozziconacci  5.\+0 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{stat\+\_\+graph.\+h@{stat\+\_\+graph.\+h}!build\+Quad@{build\+Quad}}
+\index{build\+Quad@{build\+Quad}!stat\+\_\+graph.\+h@{stat\+\_\+graph.\+h}}
+\subsubsection[{\texorpdfstring{build\+Quad(sf\+Vertex\+Array $\ast$array, int offset, float factor, float size, sf\+Float\+Rect rect\+Sprite, float zoom\+Factor)}{buildQuad(sfVertexArray *array, int offset, float factor, float size, sfFloatRect rectSprite, float zoomFactor)}}]{\setlength{\rightskip}{0pt plus 5cm}void build\+Quad (
+\begin{DoxyParamCaption}
+\item[{sf\+Vertex\+Array $\ast$}]{array, }
+\item[{int}]{offset, }
+\item[{float}]{factor, }
+\item[{float}]{size, }
+\item[{sf\+Float\+Rect}]{rect\+Sprite, }
+\item[{float}]{zoom\+Factor}
+\end{DoxyParamCaption}
+)}\hypertarget{stat__graph_8h_a28ccad37b8e8c3a5361c64c29a6bf959}{}\label{stat__graph_8h_a28ccad37b8e8c3a5361c64c29a6bf959}
+
+
+Construit des quadrilatères destinés à être affiché dans le diagramme de fréquentation des clusters. 
+
+(sf\+Vertex\+Array $\ast$array, int offset, float factor, float size, sf\+Float\+Rect rect\+Sprite, float zoom\+Factor) 
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: Tableau de vertex (sommets) à tracer \\
+\hline
+{\em offset} & \+: Ecart entre deux quadrilatères du diagramme \\
+\hline
+{\em size} & \+: Largeur du quadrilatère \\
+\hline
+{\em rect\+Sprite} & \+: Rectangle representant les limites de la fenêtre dans lequel le diagramme doit être affiché \\
+\hline
+{\em zoom\+Factor} & \+: Niveau de zoom actuel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{stat\+\_\+graph.\+h@{stat\+\_\+graph.\+h}!max\+\_\+tab@{max\+\_\+tab}}
+\index{max\+\_\+tab@{max\+\_\+tab}!stat\+\_\+graph.\+h@{stat\+\_\+graph.\+h}}
+\subsubsection[{\texorpdfstring{max\+\_\+tab(int $\ast$$\ast$tab)}{max_tab(int **tab)}}]{\setlength{\rightskip}{0pt plus 5cm}int max\+\_\+tab (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{tab}
+\end{DoxyParamCaption}
+)}\hypertarget{stat__graph_8h_aa8514c484ccd931c28df9f582968acb3}{}\label{stat__graph_8h_aa8514c484ccd931c28df9f582968acb3}
+
+
+Renvoie le maximum d\textquotesingle{}un tableau. La fonction permet de déterminer la valeur maximale du diagramme, elle sera la limite de toutes les barres du diagramme. 
+
+(int$\ast$$\ast$ tab) 
+\begin{DoxyParams}{Parameters}
+{\em tab} & \+: Tableau d\textquotesingle{}entiers à deux dimensions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: Valeur maximale du tableau 
+\end{DoxyReturn}
