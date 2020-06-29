@@ -6,7 +6,7 @@ Realize an application allowing the study, the modification of geolocation trace
 <b><i>The C language was imposed on this project. It's not the best nor the easiest language choice. Even if it's possible to 'emulate' the behaviour of an object-oriented language, it would have been preferable, and easier to use C++, especially when manipulating graphics objects.</i></b>
 
 ## Privacy
-Data are recovered from different people whose anonymity is a priority.
+Data are recovered from different people whose anonymity is a priority. This tool offer the possiblity to erase from logs files, unwanted position.
 
 ## Log data treatment
 <u>For each log :</u>
