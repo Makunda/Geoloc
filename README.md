@@ -1,9 +1,12 @@
 # Geoloc
+<u>Author</u>
+- Hugo JOBY @Makunda
+- Vincent MOZZICONACCI @danmifan 
 
 ## Goal 
 Realize an application allowing the study, the modification of geolocation trace.
 <br/>
-<b><i>The C language was imposed on this project. It's not the best nor the easiest language choice. Even if it's possible to 'emulate' the behaviour of an object-oriented language, it would have been preferable, and easier to use C++, especially when manipulating graphics objects.</i></b>
+<b><i>The C language was imposed on this project. It's not the best nor the easiest language choice. Even if it's possible to 'emulate' the behavior of an object-oriented language, it would have been better, and easier to use C++, especially to manipulate graphics objects.</i></b>
 
 ## Privacy
 Data are recovered from different people whose anonymity is a priority. This tool offer the possiblity to erase from logs files, unwanted position.
