@@ -21,7 +21,7 @@ Data are recovered from different people whose anonymity is a priority. This too
 In order to characterize the centres of interest, we use an IGN address base of region Cher (France, 18)
 The point corresponding to the centre of interest is compared to the nearest address to find out the address of the centre of interest in question. <br/>
 <br/>
-<i>The database if a 23Mo CSV file, in order to improve the search operations in this base, the file is splitted in multiple file, and indexed. You can find the code indexing the base at /index </i>
+<i>The database is a 23Mo CSV file, in order to improve the search operations in this base, the file is splitted in multiple files, and indexed. You can find the code indexing the base at /index </i>
 
 ## Data Display
 This project's UI was realized using CSFML ( C bind of SFML) : 
