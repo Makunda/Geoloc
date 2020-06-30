@@ -1,5 +1,5 @@
 # Geoloc
-<u>Author</u>
+<u>Authors : </u>
 - Hugo JOBY @Makunda
 - Vincent MOZZICONACCI @danmifan 
 
